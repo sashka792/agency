@@ -326,6 +326,9 @@ footer {
       color: #fff;
       font-size: 25px;
       text-align: center; }
+      footer .phone .messengers a {
+        color: #fff;
+        text-decoration: none; }
       footer .phone .messengers i {
         text-align: center;
         margin-right: 25px; }
