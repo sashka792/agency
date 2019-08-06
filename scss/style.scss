@@ -142,8 +142,9 @@ textarea {
 }
 
 .process{
-	margin: 40px;
+	margin: 60px;
 	&__title{
+		margin-bottom: 40px;
 		font-size: 30px;
 		font-weight: 700;
 		font-family: 'Raleway', sans-serif;
@@ -151,6 +152,7 @@ textarea {
 	.work-step{
 		letter-spacing: 0.025em;
 		&__title{
+			margin: 25px 0 15px;
 			font-size: 22px;
 			font-weight: 100;
 			font-family: 'Raleway', sans-serif;
@@ -165,12 +167,12 @@ textarea {
 }
 
 footer{
-	background-color: #0076b3;
+	background-color: #013957;
 	font-family: 'Roboto', sans-serif;
 	.menu{
 		margin: 65% auto;
 		padding: 0;
-		font-size: 14px;
+		font-size: 12px;
 		list-style: none;
 		li{
 			margin-bottom: 10px;
@@ -182,7 +184,7 @@ footer{
 		}
 	}
 	.ba-social-media {
-		margin-top: 55px;
+		margin-top: 45px;
 		align-items: center;
 		text-align: center;
 		a{
@@ -192,6 +194,16 @@ footer{
 		.fab{
 			margin: 0 30px;
 			font-size: 35px;
+		}
+		.fa-instagram:hover{
+			color:#e3436b;
+		}
+		.fa-facebook-square:hover{
+			color: #3d6ddc;
+		}
+		
+		.fa-youtube:hover{
+			color: #ff0000;
 		}
 	}
 	.copyright {
@@ -207,6 +219,43 @@ footer{
 		a{
 			text-decoration: none;
 			color: #7f9eac;
+		}
+	}
+	.phone{
+		margin: 30px 0;
+		color: #fff;
+		.messengers {
+			color: #fff;
+			font-size: 25px;
+			text-align: center;
+			i{
+				text-align: center;
+				margin-right: 25px;
+				&:hover{
+					cursor: pointer;
+				}
+			}
+			.fa-whatsapp:hover{
+				color: #2fd14b;
+			}
+			.fa-viber:hover{
+				color: #795098;
+			}
+			.fa-telegram-plane:hover{
+				color: #2ba0da;
+			}
+		}
+	}
+	.adress{
+		margin-left: 50px;
+		margin-top: 45px;
+		font-size: 12px;
+		color: #fff;
+		width: 145px;
+		line-height: 1.6em;
+		.adress-text{
+			margin: 0;
+			padding: 0;
 		}
 	}
 }
