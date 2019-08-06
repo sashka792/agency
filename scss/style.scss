@@ -120,7 +120,6 @@ textarea {
 	max-width: 460px;
 	text-transform: uppercase;
 	align-items: center; 
-
 	text-align: center;
 	margin-top: 10%;
 	margin: 20% auto 90px;
@@ -166,7 +165,7 @@ textarea {
 }
 
 footer{
-	background-color: #2771a9;
+	background-color: #0076b3;
 	font-family: 'Roboto', sans-serif;
 	.menu{
 		margin: 65% auto;
@@ -180,6 +179,34 @@ footer{
 				color: #fff;
 				line-height: 1.25em;
 			}
+		}
+	}
+	.ba-social-media {
+		margin-top: 55px;
+		align-items: center;
+		text-align: center;
+		a{
+			text-decoration: none;
+			color: #fff;
+		}
+		.fab{
+			margin: 0 30px;
+			font-size: 35px;
+		}
+	}
+	.copyright {
+		color: #D5D5D5;
+		font-size: 12px;
+		margin: 20px 0 6px;
+	}
+	.developed {
+		margin: 0;
+		padding: 0;
+		color: #7f9eac;
+		font-size: 10px;
+		a{
+			text-decoration: none;
+			color: #7f9eac;
 		}
 	}
 }

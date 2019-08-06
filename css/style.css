@@ -274,7 +274,7 @@ select {
       line-height: 1.6em; }
 
 footer {
-  background-color: #2771a9;
+  background-color: #0076b3;
   font-family: 'Roboto', sans-serif; }
   footer .menu {
     margin: 65% auto;
@@ -287,5 +287,29 @@ footer {
         text-decoration: none;
         color: #fff;
         line-height: 1.25em; }
+  footer .ba-social-media {
+    margin-top: 55px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center; }
+    footer .ba-social-media a {
+      text-decoration: none;
+      color: #fff; }
+    footer .ba-social-media .fab {
+      margin: 0 30px;
+      font-size: 35px; }
+  footer .copyright {
+    color: #D5D5D5;
+    font-size: 12px;
+    margin: 20px 0 6px; }
+  footer .developed {
+    margin: 0;
+    padding: 0;
+    color: #7f9eac;
+    font-size: 10px; }
+    footer .developed a {
+      text-decoration: none;
+      color: #7f9eac; }
 
 /*# sourceMappingURL=style.css.map */
