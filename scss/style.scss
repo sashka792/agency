@@ -159,6 +159,9 @@ textarea {
 .positions{
 	margin: 190px 0 60px;
 }
+.partners-logo{
+	height: 125px;
+}
 .position {
 	display: flex;
 	position: relative;
@@ -231,6 +234,45 @@ textarea {
 .position:hover .position__overlay {
 	opacity: 1;
 }
+
+// Team
+.img-team{
+	width: 255px;
+}
+
+// Slick partners
+.partners {
+    background-size: cover;
+	padding: 80px 0 70px;
+	.partners-inner {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	.single-partner {
+		text-align: center;
+	}
+	.single-partner img {
+		height: 150px;
+		// margin: 0 auto 20px;
+	}
+}
+
+.slick-dots li {
+    margin: 0;
+}
+
+.slick-dots li button:before {
+    font-size: 11px;
+    opacity: 1;
+    color: rgba(255, 255, 255, .2);
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #fff;
+}
+
+
 // How we work
 .process{
 	margin: 60px;

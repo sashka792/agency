@@ -150,6 +150,9 @@ select {
 .positions {
   margin: 190px 0 60px; }
 
+.partners-logo {
+  height: 125px; }
+
 .position {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -230,6 +233,32 @@ select {
 
 .position:hover .position__overlay {
   opacity: 1; }
+
+.img-team {
+  width: 255px; }
+
+.partners {
+  background-size: cover;
+  padding: 80px 0 70px; }
+  .partners .partners-inner {
+    max-width: 100%;
+    margin: 0 auto; }
+  .partners .single-partner {
+    text-align: center; }
+  .partners .single-partner img {
+    height: 150px; }
+
+.slick-dots li {
+  margin: 0; }
+
+.slick-dots li button:before {
+  font-size: 11px;
+  opacity: 1;
+  color: rgba(255, 255, 255, 0.2); }
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #fff; }
 
 .process {
   margin: 60px; }
