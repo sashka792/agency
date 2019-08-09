@@ -1,61 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
-<head>
-	<meta charset="UTF-8">
-	<title>Agaoglu Agency</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<meta name="description" content="" />
-	<link rel="icon" href="img/logo.png" />
-	<!-- <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css"> -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/normalize.css" />
-	<link rel="stylesheet" href="css/layout.css" />
-	<link rel="stylesheet" href="css/style.css" />
-
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<title>Agaoglu Agency</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<meta name="description" content="" />
+		<link rel="icon" href="img/logo.png" />
+	
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+			integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"></script>
+	
+		<link rel="stylesheet" href="../css/style.css" />
+	
+	</head>
 
 <body>
 	<header id="header" class="header">
-		<div class="ba-container">
-			<div class="ba-row">
-				<div class="ba-col-12">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
 					<nav class="navigation">
 						<a href="index.html" class="wrap-logo">
-							<img src="img/logo-1.svg" alt="" class="logo">
+							<img src="../img/logo-1.svg" alt="" class="logo">
 						</a>
 						<ul class="menu-list">
 							<li class="menu-item">
 								<a href="../index.html" class="menu-item__link">Главная</a>
 							</li>
 							<li class="menu-item">
-								<a href="positions.html" class="menu-item__link">Вакансии</a>
+								<a href="../pages/positions.html" class="menu-item__link">Вакансии</a>
 							</li>
 							<li class="menu-item">
 								<a href="services.html" class="menu-item__link">Услуги</a>
 							</li>
 							<li class="menu-item">
-								<a href="#" class="menu-item__link">О нас</a>
+								<a href="../pages/about.html" class="menu-item__link">О нас</a>
 							</li>
 							<li class="menu-item">
-								<a href="#" class="menu-item__link">Отзывы</a>
+								<a href="../pages/testimonials.html" class="menu-item__link">Отзывы</a>
 							</li>
 							<li class="menu-item">
-								<a href="#" class="menu-item__link">Контакты</a>
+								<a href="../pages/contacts.html" class="menu-item__link">Контакты</a>
 							</li>
 						</ul>
 						<div class="social-media">
 							<a href="https://www.instagram.com/agaoglu_agency_poltava/?hl=ru">
-								<img src="img/insta.svg" alt="Agaoglu Instagram">
+								<img src="../img/insta.svg" alt="Agaoglu Instagram">
 							</a>
 							<a href="https://www.facebook.com/ukrainepoltava/">
-								<img src="img/facebook.svg" alt="Agaoglu Facebook">
+								<img src="../img/facebook.svg" alt="Agaoglu Facebook">
 							</a>
 							<a href="https://www.youtube.com/channel/UCAJ_2N1ynUZaRp7ljyLYTEQ">
-								<img src="img/youtube.svg" class="youtube-logo" alt="Agaoglu YouTube">
+								<img src="../img/youtube.svg" class="youtube-logo" alt="Agaoglu YouTube">
 							</a>
 						</div>
 					</nav>
@@ -65,11 +69,11 @@
 	</header>
 	<main class="main" id="main">
 		<section class="positions ba-text-center">
-			<div class="ba-container">
-				<div class="ba-row">
-					<div class="ba-col-4">
+			<div class="container">
+				<div class="row">
+					<div class="col-4">
 						<div class="position">
-							<img src="img/positions/reception.jpg" alt="" class="position-image">
+							<img src="../img/positions/cook.jpg" alt="" class="position-image">
 							<div class="position__overlay">
 								<h4 class="position__overlay-title">
 									Reception
@@ -89,236 +93,9 @@
 							<!-- /.position__overlay -->
 						</div>
 					</div>
-					<div class="ba-col-4">
-						<div class="position">
-							<img src="img/positions/guest.jpg" alt="" class="position-image">
-							<div class="position__overlay">
-								<h4 class="position__overlay-title">
-									Guest Relations
-								</h4>
-								<p class="position__overlay-salary">
-									ЗП от $600
-								</p>
-								<p class="position__overlay-description">
-									В рамках концепции Акоффа и Стэка, начальная стадия проведения исследования
-								</p>
-								<div class="position__overlay-messengers">
-									<a title="WhatsApp" class="icon" href=""><i class="fab fa-whatsapp"></i></a>
-									<a title="Viber" class="icon" href="viber://chat?number=+380502412717"><i class="fab fa-viber"></i></a>
-									<a title="Telegram" class="icon" href="https://t.me/Ali_Agaoglu"><i class="fab fa-telegram-plane"></i></a>
-								</div>
-							</div>
-							<!-- /.position__overlay -->
-						</div>
-					</div>
-					<div class="ba-col-4">
-						<div class="position">
-							<img src="img/positions/animator.jpg" alt="" class="position-image">
-							<div class="position__overlay">
-								<h4 class="position__overlay-title">
-									Guest Relations
-								</h4>
-								<p class="position__overlay-salary">
-									ЗП от $600
-								</p>
-								<p class="position__overlay-description">
-									В рамках концепции Акоффа и Стэка, начальная стадия проведения исследования
-								</p>
-								<div class="position__overlay-messengers">
-									<a title="WhatsApp" class="icon" href=""><i class="fab fa-whatsapp"></i></a>
-									<a title="Viber" class="icon" href="viber://chat?number=+380502412717"><i class="fab fa-viber"></i></a>
-									<a title="Telegram" class="icon" href="https://t.me/Ali_Agaoglu"><i class="fab fa-telegram-plane"></i></a>
-								</div>
-							</div>
-							<!-- /.position__overlay -->
-						</div>
-					</div>
-				</div>
-				<div class="ba-row">
-					<div class="ba-col-4">
-						<div class="position">
-							<img src="img/positions/cook.jpg" alt="" class="position-image">
-							<div class="position__overlay">
-								<h4 class="position__overlay-title">
-									Reception
-								</h4>
-								<p class="position__overlay-salary">
-									ЗП от $400 + tips
-								</p>
-								<p class="position__overlay-description">
-									В рамках концепции Акоффа и Стэка, начальная стадия проведения исследования
-								</p>
-								<div class="position__overlay-messengers">
-									<a title="WhatsApp" class="icon" href=""><i class="fab fa-whatsapp"></i></a>
-									<a title="Viber" class="icon" href="viber://chat?number=+380502412717"><i class="fab fa-viber"></i></a>
-									<a title="Telegram" class="icon" href="https://t.me/Ali_Agaoglu"><i class="fab fa-telegram-plane"></i></a>
-								</div>
-							</div>
-							<!-- /.position__overlay -->
-						</div>
-					</div>
-					<div class="ba-col-4">
+					<div class="col-8">
 						<div class="position">
 							<img src="img/positions/waiters.jpg" alt="" class="position-image">
-							<div class="position__overlay">
-								<h4 class="position__overlay-title">
-									Guest Relations
-								</h4>
-								<p class="position__overlay-salary">
-									ЗП от $600
-								</p>
-								<p class="position__overlay-description">
-									В рамках концепции Акоффа и Стэка, начальная стадия проведения исследования
-								</p>
-								<div class="position__overlay-messengers">
-									<a title="WhatsApp" class="icon" href=""><i class="fab fa-whatsapp"></i></a>
-									<a title="Viber" class="icon" href="viber://chat?number=+380502412717"><i class="fab fa-viber"></i></a>
-									<a title="Telegram" class="icon" href="https://t.me/Ali_Agaoglu"><i class="fab fa-telegram-plane"></i></a>
-								</div>
-							</div>
-							<!-- /.position__overlay -->
-						</div>
-					</div>
-					<div class="ba-col-4">
-						<div class="position">
-							<img src="img/positions/wait-roll.jpg" alt="" class="position-image">
-							<div class="position__overlay">
-								<h4 class="position__overlay-title">
-									Guest Relations
-								</h4>
-								<p class="position__overlay-salary">
-									ЗП от $600
-								</p>
-								<p class="position__overlay-description">
-									В рамках концепции Акоффа и Стэка, начальная стадия проведения исследования
-								</p>
-								<div class="position__overlay-messengers">
-									<a title="WhatsApp" class="icon" href=""><i class="fab fa-whatsapp"></i></a>
-									<a title="Viber" class="icon" href="viber://chat?number=+380502412717"><i class="fab fa-viber"></i></a>
-									<a title="Telegram" class="icon" href="https://t.me/Ali_Agaoglu"><i class="fab fa-telegram-plane"></i></a>
-								</div>
-							</div>
-							<!-- /.position__overlay -->
-						</div>
-					</div>
-				</div>
-				<!-- /.ba-row -->
-				<div class="ba-row">
-					<div class="ba-col-4">
-						<div class="position">
-							<img src="img/positions/bartender.jpg" alt="" class="position-image">
-							<div class="position__overlay">
-								<h4 class="position__overlay-title">
-									Reception
-								</h4>
-								<p class="position__overlay-salary">
-									ЗП от $400 + tips
-								</p>
-								<p class="position__overlay-description">
-									В рамках концепции Акоффа и Стэка, начальная стадия проведения исследования
-								</p>
-								<div class="position__overlay-messengers">
-									<a title="WhatsApp" class="icon" href=""><i class="fab fa-whatsapp"></i></a>
-									<a title="Viber" class="icon" href="viber://chat?number=+380502412717"><i class="fab fa-viber"></i></a>
-									<a title="Telegram" class="icon" href="https://t.me/Ali_Agaoglu"><i class="fab fa-telegram-plane"></i></a>
-								</div>
-							</div>
-							<!-- /.position__overlay -->
-						</div>
-					</div>
-					<div class="ba-col-4">
-						<div class="position">
-							<img src="img/positions/dj.jpg" alt="" class="position-image">
-							<div class="position__overlay">
-								<h4 class="position__overlay-title">
-									Guest Relations
-								</h4>
-								<p class="position__overlay-salary">
-									ЗП от $600
-								</p>
-								<p class="position__overlay-description">
-									В рамках концепции Акоффа и Стэка, начальная стадия проведения исследования
-								</p>
-								<div class="position__overlay-messengers">
-									<a title="WhatsApp" class="icon" href=""><i class="fab fa-whatsapp"></i></a>
-									<a title="Viber" class="icon" href="viber://chat?number=+380502412717"><i class="fab fa-viber"></i></a>
-									<a title="Telegram" class="icon" href="https://t.me/Ali_Agaoglu"><i class="fab fa-telegram-plane"></i></a>
-								</div>
-							</div>
-							<!-- /.position__overlay -->
-						</div>
-					</div>
-					<div class="ba-col-4">
-						<div class="position">
-							<img src="img/positions/fitness-trainer.jpg" alt="" class="position-image">
-							<div class="position__overlay">
-								<h4 class="position__overlay-title">
-									Guest Relations
-								</h4>
-								<p class="position__overlay-salary">
-									ЗП от $600
-								</p>
-								<p class="position__overlay-description">
-									В рамках концепции Акоффа и Стэка, начальная стадия проведения исследования
-								</p>
-								<div class="position__overlay-messengers">
-									<a title="WhatsApp" class="icon" href=""><i class="fab fa-whatsapp"></i></a>
-									<a title="Viber" class="icon" href="viber://chat?number=+380502412717"><i class="fab fa-viber"></i></a>
-									<a title="Telegram" class="icon" href="https://t.me/Ali_Agaoglu"><i class="fab fa-telegram-plane"></i></a>
-								</div>
-							</div>
-							<!-- /.position__overlay -->
-						</div>
-					</div>
-				</div>
-				<div class="ba-row">
-					<div class="ba-col-4">
-						<div class="position">
-							<img src="img/positions/massager.jpg" alt="" class="position-image">
-							<div class="position__overlay">
-								<h4 class="position__overlay-title">
-									Reception
-								</h4>
-								<p class="position__overlay-salary">
-									ЗП от $400 + tips
-								</p>
-								<p class="position__overlay-description">
-									В рамках концепции Акоффа и Стэка, начальная стадия проведения исследования
-								</p>
-								<div class="position__overlay-messengers">
-									<a title="WhatsApp" class="icon" href=""><i class="fab fa-whatsapp"></i></a>
-									<a title="Viber" class="icon" href="viber://chat?number=+380502412717"><i class="fab fa-viber"></i></a>
-									<a title="Telegram" class="icon" href="https://t.me/Ali_Agaoglu"><i class="fab fa-telegram-plane"></i></a>
-								</div>
-							</div>
-							<!-- /.position__overlay -->
-						</div>
-					</div>
-					<div class="ba-col-4">
-						<div class="position">
-							<img src="img/positions/housekeeping.jpg" alt="" class="position-image">
-							<div class="position__overlay">
-								<h4 class="position__overlay-title">
-									Guest Relations
-								</h4>
-								<p class="position__overlay-salary">
-									ЗП от $600
-								</p>
-								<p class="position__overlay-description">
-									В рамках концепции Акоффа и Стэка, начальная стадия проведения исследования
-								</p>
-								<div class="position__overlay-messengers">
-									<a title="WhatsApp" class="icon" href=""><i class="fab fa-whatsapp"></i></a>
-									<a title="Viber" class="icon" href="viber://chat?number=+380502412717"><i class="fab fa-viber"></i></a>
-									<a title="Telegram" class="icon" href="https://t.me/Ali_Agaoglu"><i class="fab fa-telegram-plane"></i></a>
-								</div>
-							</div>
-							<!-- /.position__overlay -->
-						</div>
-					</div>
-					<div class="ba-col-4">
-						<div class="position">
-							<img src="img/positions/guest-relations.jpg" alt="" class="position-image">
 							<div class="position__overlay">
 								<h4 class="position__overlay-title">
 									Guest Relations
@@ -344,14 +121,14 @@
 		</section>
 	</main>
 	<footer>
-		<div class="ba-container">
-			<div class="ba-row">
-				<div class="ba-col-2">
+		<div class="container">
+			<div class="row d-flex justify-content-center align-items-center">
+				<div class="col-2">
 					<a href="index.html">
-						<img src="img/logo.png" alt="">
+						<img src="../img/logo.png" alt="">
 					</a>
 				</div>
-				<div class="ba-col-1">
+				<div class="col-1">
 					<ul class="menu">
 						<li class="menu-item">
 							<a href="#" class="menu-item__link">Главная</a>
@@ -364,7 +141,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="ba-col-1">
+				<div class="col-1">
 					<ul class="menu">
 						<li class="menu-item">
 							<a href="#" class="menu-item__link">Услуги</a>
@@ -377,8 +154,8 @@
 						</li>
 					</ul>
 				</div>
-				<div class="ba-col-4 ba-text-center">
-					<div class="ba-social-media">
+				<div class="col-4 text-center">
+					<div class="social-media">
 						<a href="https://www.instagram.com/agaoglu_agency_poltava/?hl=ru">
 							<i class="fab fa-instagram"></i>
 						</a>
@@ -396,7 +173,7 @@
 						Developed by <a href="http://shyian-code.site/">&lt;&sol;&gt;ShyianCode</a>
 					</p>
 				</div>
-				<div class="ba-col-2 phone">
+				<div class="col-2 phone">
 					<p class="phone-number">
 						+380 (50) 241 27 17
 					</p>
@@ -406,7 +183,7 @@
 						<a title="Telegram" class="icon" href="https://t.me/Ali_Agaoglu"><i class="fab fa-telegram-plane"></i></a>
 					</div>
 				</div>
-				<div class="ba-col-2 adress">
+				<div class="col-2 adress">
 					<p class="adress-text">36004,</p>
 					<p class="adress-text">
 						Украина, г. Полтава

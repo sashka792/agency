@@ -1,120 +1,4 @@
-@import url(_normalize.css);
 @import url("https://fonts.googleapis.com/css?family=Oswald:400,700|Raleway:400,700|Roboto:100,300,400,700&display=swap");
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.cf:before, .cf:after {
-  content: " ";
-  display: table; }
-
-.cf:after {
-  clear: both; }
-
-.ba-container, .ba-container-center {
-  margin-left: auto;
-  margin-right: auto; }
-
-img {
-  max-width: 100%;
-  height: auto; }
-
-html {
-  height: 100%; }
-
-body, html {
-  min-height: 100%; }
-
-/* Text align */
-.ba-text-left {
-  text-align: left; }
-
-.ba-text-right {
-  text-align: right; }
-
-.ba-text-center {
-  text-align: center; }
-
-/* Absolute centering */
-.ba-relative {
-  position: relative; }
-
-.ba-absolute-center {
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto; }
-
-/* Circle element */
-.ba-circle {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%; }
-
-/* Flex grid */
-.ba-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-left: -30px; }
-
-.ba-row + .ba-row {
-  margin-top: 30px; }
-
-.ba-row > [class*='ba-col-'] {
-  padding-left: 30px; }
-
-.ba-row--collapse {
-  margin-left: 0; }
-
-.ba-row--collapse + .ba-row--collapse {
-  margin-top: 0; }
-
-.ba-row--collapse > [class*="ba-col-"] {
-  padding-left: 0; }
-
-.ba-col-12 {
-  width: 100%; }
-
-.ba-col-11 {
-  width: 91.6666%; }
-
-.ba-col-10 {
-  width: 83.3333%; }
-
-.ba-col-9 {
-  width: 75%; }
-
-.ba-col-8 {
-  width: 66.6666%; }
-
-.ba-col-7 {
-  width: 58.33%; }
-
-.ba-col-6 {
-  width: 50%; }
-
-.ba-col-5 {
-  width: 41.66%; }
-
-.ba-col-4 {
-  width: 33.333%; }
-
-.ba-col-3 {
-  width: 25%; }
-
-.ba-col-2 {
-  width: 16.666%; }
-
-.ba-col-1 {
-  width: 8.3333%; }
-
 body {
   margin: 0; }
 
@@ -123,11 +7,6 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0; }
 
 /* Layout */
-.ba-container {
-  padding-left: 20px;
-  padding-right: 20px;
-  max-width: 1150px; }
-
 /* Typography */
 a,
 input[type="submit"],
@@ -175,7 +54,7 @@ select {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 5px 0;
+  padding: 15px 0;
   z-index: 1; }
 
 .wrap-logo {
@@ -204,7 +83,8 @@ select {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  text-align: center; }
+  text-align: center;
+  margin: 0; }
   .menu-list a {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -298,6 +178,7 @@ select {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -371,7 +252,6 @@ footer {
   background-color: #013957;
   font-family: 'Roboto', sans-serif; }
   footer .menu {
-    margin: 65% auto;
     padding: 0;
     font-size: 14px;
     list-style: none; }
@@ -381,23 +261,21 @@ footer {
         text-decoration: none;
         color: #fff;
         line-height: 1.25em; }
-  footer .ba-social-media {
-    margin-top: 45px;
+  footer .social-media {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     text-align: center; }
-    footer .ba-social-media a {
+    footer .social-media a {
       text-decoration: none;
       color: #fff; }
-    footer .ba-social-media .fab {
-      margin: 0 20px;
+    footer .social-media .fab {
       font-size: 25px; }
-    footer .ba-social-media .fa-instagram:hover {
+    footer .social-media .fa-instagram:hover {
       color: #e3436b; }
-    footer .ba-social-media .fa-facebook-square:hover {
+    footer .social-media .fa-facebook-square:hover {
       color: #3d6ddc; }
-    footer .ba-social-media .fa-youtube:hover {
+    footer .social-media .fa-youtube:hover {
       color: #ff0000; }
   footer .copyright {
     color: #D5D5D5;
@@ -412,7 +290,6 @@ footer {
       text-decoration: none;
       color: #7f9eac; }
   footer .phone {
-    margin: 45px 0;
     color: #fff; }
     footer .phone .messengers {
       margin-top: 20px;
@@ -438,11 +315,9 @@ footer {
       footer .phone .messengers .fa-telegram-plane:hover {
         color: #2ba0da; }
   footer .adress {
-    margin-left: 40px;
-    margin-top: 45px;
     font-size: 12px;
     color: #fff;
-    width: 145px;
+    padding-left: 60px;
     line-height: 1.6em; }
     footer .adress .adress-text {
       margin: 0;
