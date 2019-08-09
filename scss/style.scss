@@ -273,6 +273,48 @@ textarea {
 }
 
 
+// Testimonials
+.testimonials {
+	color: #000;
+	margin: 160px 0 60px;
+	.wrap-img {
+		width: 100%;
+		height: 160px;
+		background: grey;
+		border-radius: 10px;
+	  }
+
+	  .wrap-quotes {
+		position: absolute;
+		top: 20px;
+		left: 35px;
+	  }
+	  .fa-quote-left {
+		font-size: 40px;
+		color: #005073;
+	  }
+  }
+
+  .wrap-testimonials {
+	padding: 5px 5px 5px 70px;
+	position: relative;
+	border-radius: 20px;
+	background: rgba(146, 201, 229, .2);
+	.testimonials-text, 
+	.testimonials-name,
+	.testimonials-country
+	{
+		margin: 20px 10px 0px 20px;
+	}
+  }
+  
+// Contacts
+
+.contacts {
+	margin: 160px 0 60px;
+}
+  
+
 // How we work
 .process{
 	margin: 60px;

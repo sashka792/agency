@@ -260,6 +260,35 @@ select {
   opacity: 1;
   color: #fff; }
 
+.testimonials {
+  color: #000;
+  margin: 160px 0 60px; }
+  .testimonials .wrap-img {
+    width: 100%;
+    height: 160px;
+    background: grey;
+    border-radius: 10px; }
+  .testimonials .wrap-quotes {
+    position: absolute;
+    top: 20px;
+    left: 35px; }
+  .testimonials .fa-quote-left {
+    font-size: 40px;
+    color: #005073; }
+
+.wrap-testimonials {
+  padding: 5px 5px 5px 70px;
+  position: relative;
+  border-radius: 20px;
+  background: rgba(146, 201, 229, 0.2); }
+  .wrap-testimonials .testimonials-text,
+  .wrap-testimonials .testimonials-name,
+  .wrap-testimonials .testimonials-country {
+    margin: 20px 10px 0px 20px; }
+
+.contacts {
+  margin: 160px 0 60px; }
+
 .process {
   margin: 60px; }
   .process__title {
