@@ -97,6 +97,9 @@ select {
     .menu-list a:hover {
       border-bottom: 2px #fff solid;
       width: 150%; }
+    .menu-list a:active {
+      border-bottom: 2px #fff solid;
+      width: 150%; }
 
 .social-media > a {
   text-decoration: none;
