@@ -80,14 +80,19 @@
                 <div class="row">
                     <div class="col-lg-7">
                         <div class="wrap-map">
-                            
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10344.894047321959!2d34.55488657995365!3d49.5935343622535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x63ef4752abc07876!2z0J_QvtC70YLQsNCy0YHQutCw0Y8g0LPQvtGB0YPQtNCw0YDRgdGC0LLQtdC90L3QsNGPINCw0LPRgNCw0YDQvdCw0Y8g0LDQutCw0LTQtdC80LjRjw!5e0!3m2!1sru!2sua!4v1565544277236!5m2!1sru!2sua" width="635" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="offset-lg-1 col-lg-4">
-                        <form action="send">
-                            <input type="text">
-                            <input type="text">
-                        </form>
+                        <form action="#" class="contact-form__form">
+							<input class="contact-form__form_name" type="text" name="name" placeholder="Ваше имя" required>
+							<input class="contact-form__form_email" type="email" name="email" placeholder="Ваш e-mail" required>
+							<input class="contact-form__form_tel" type="tel" name="tel" placeholder="Ваш телефон" required>
+							<textarea placeholder="Сообщение" class="contact-form__form_text" rows="4" cols="50" name="comment" form="usrform" required></textarea>
+							<button class="get-catalog__btn btn">
+								Отправить
+							</button>
+						</form>
                     </div>
                 </div>
             </div>
