@@ -38,6 +38,9 @@ select {
   background-color: #B0E3FE;
   border: 1px solid #00A8FF;
   border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 14px;
   margin: 5px 0;
   width: 100%;
   padding: 10px;
@@ -321,7 +324,21 @@ textarea::placeholder {
   width: 600px; }
 
 .contacts {
-  margin: 160px 0 60px; }
+  margin: 160px 0 0px;
+  min-height: 100vh; }
+  .contacts-info {
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif; }
+    .contacts-info .fas {
+      margin-right: 25px;
+      font-size: 25px;
+      color: #025e8e; }
+    .contacts-info .fa-at {
+      margin-left: -4px; }
+    .contacts-info__adress {
+      margin-bottom: 10px; }
+    .contacts-info__email {
+      margin-bottom: 10px; }
 
 .process {
   margin: 60px; }

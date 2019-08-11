@@ -45,7 +45,9 @@ select {
 	background-color: #B0E3FE;
 	border: 1px solid #00A8FF;
 	border-radius: 10px;
-	
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	font-size: 14px;
 	margin: 5px 0;
 	width: 100%;
 	padding: 10px;
@@ -136,7 +138,7 @@ textarea {
 	// background: url(../img/main-bg.jpg) 50% no-repeat / cover;
 	background: linear-gradient(to bottom, rgb(60, 60, 60) 0%, rgba(0, 64, 255, 0.38) 100%), url(../img/bg-2.jpg) no-repeat center/cover;
 	min-height: 100vh;
-	background-attachment: fixed
+	background-attachment: fixed;
 }
 .offer__title{
 	max-width: 460px;
@@ -328,7 +330,27 @@ textarea {
 	width: 600px;
 }
 .contacts {
-	margin: 160px 0 60px;
+	margin: 160px 0 0px;
+	min-height: 100vh;
+	
+	&-info{
+		margin-top: 40px;
+		font-family: 'Roboto', sans-serif; 
+		.fas {
+			margin-right: 25px;
+			font-size: 25px;
+			color: #025e8e;
+		}
+		.fa-at{
+			margin-left: -4px;
+		}
+		&__adress{
+			margin-bottom: 10px;
+		}
+		&__email{
+			margin-bottom: 10px;
+		}
+	}
 }
   
 
