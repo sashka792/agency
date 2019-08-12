@@ -22,6 +22,9 @@ button{
 	width: 100%;
 	padding: 10px;
 }
+.menu-list .active a{
+	border-bottom: 2px solid #fff;
+}
 input[type="submit"],
 input[type="button"],
 button,
@@ -48,11 +51,11 @@ select {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 100;
 	font-size: 14px;
+	
 	margin: 5px 0;
 	width: 100%;
 	padding: 10px;
 	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
-	
 }
 input::placeholder, 
 textarea::placeholder {
@@ -112,26 +115,34 @@ textarea {
 		font-family: 'Roboto', sans-serif;
 		font-weight: 400;
 		color: #fff;
-		font-size: 16px;
+		// font-size: 16px;
+		font-size: 1rem;
 		letter-spacing: 0.035em;
 		text-decoration: none;
 		margin-right: 30px;
 		padding-bottom: 5px;
 		border-bottom: 2px transparent solid;
+		@media screen and (max-width: 768px) {
+			margin-right: 15px;
+			font-size: 0.65rem;
+		}
 		&:hover{
 			border-bottom: 2px #fff solid;
 			width: 150%;
 		}
-		&:active{
-			border-bottom: 2px #fff solid;
-			width: 150%;
-		}
+		
 	}
 }
 .social-media > a{
 	text-decoration: none;
 	color: #fff;
 	margin-right: 20px;
+	img {
+		@media screen and (max-width: 768px) {
+			max-width: 15%;
+		}
+	}
+	
 }
 
 .offer {
@@ -172,6 +183,39 @@ textarea {
 	border-radius: 10px;
 	margin: 0;
 }
+// How we work
+.process{
+	margin: 60px;
+	&__title{
+		margin-bottom: 40px;
+		font-size: 30px;
+		font-weight: 700;
+		font-family: 'Raleway', sans-serif;
+	}
+	.work-step{
+		letter-spacing: 0.025em;
+		img{
+			max-width: 100%;
+			height: auto;
+		}
+		&__title{
+			margin: 25px 0 15px;
+			// font-size: 22px;
+			font-size: 1.375rem;
+			font-weight: 100;
+			font-family: 'Raleway', sans-serif;
+		}
+		&__descr{
+			font-family: 'Roboto', sans-serif;
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 1.6em;
+		}
+	}
+}
+
+
+
 // Positions
 .positions{
 	margin: 190px 0 60px;
@@ -332,7 +376,9 @@ textarea {
 .contacts {
 	margin: 160px 0 0px;
 	min-height: 100vh;
-	
+	.title-contacts{
+		margin-bottom: 10px;
+	}
 	&-info{
 		margin-top: 40px;
 		font-family: 'Roboto', sans-serif; 
@@ -349,33 +395,6 @@ textarea {
 		}
 		&__email{
 			margin-bottom: 10px;
-		}
-	}
-}
-  
-
-// How we work
-.process{
-	margin: 60px;
-	&__title{
-		margin-bottom: 40px;
-		font-size: 30px;
-		font-weight: 700;
-		font-family: 'Raleway', sans-serif;
-	}
-	.work-step{
-		letter-spacing: 0.025em;
-		&__title{
-			margin: 25px 0 15px;
-			font-size: 22px;
-			font-weight: 100;
-			font-family: 'Raleway', sans-serif;
-		}
-		&__descr{
-			font-family: 'Roboto', sans-serif;
-			font-size: 14px;
-			font-weight: 300;
-			line-height: 1.6em;
 		}
 	}
 }
@@ -470,6 +489,9 @@ footer{
 		color: #fff;
 		padding-left: 60px;
 		line-height: 1.6em;
+		@media screen and (max-width: 1025px) {
+			padding-left: 30px;
+		}
 		.adress-text{
 			margin: 0;
 			padding: 0;

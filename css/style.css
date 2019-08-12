@@ -22,6 +22,9 @@ button {
   width: 100%;
   padding: 10px; }
 
+.menu-list .active a {
+  border-bottom: 2px solid #fff; }
+
 input[type="submit"],
 input[type="button"],
 button,
@@ -123,16 +126,17 @@ textarea::placeholder {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #fff;
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: 0.035em;
     text-decoration: none;
     margin-right: 30px;
     padding-bottom: 5px;
     border-bottom: 2px transparent solid; }
+    @media screen and (max-width: 768px) {
+      .menu-list a {
+        margin-right: 15px;
+        font-size: 0.65rem; } }
     .menu-list a:hover {
-      border-bottom: 2px #fff solid;
-      width: 150%; }
-    .menu-list a:active {
       border-bottom: 2px #fff solid;
       width: 150%; }
 
@@ -140,6 +144,9 @@ textarea::placeholder {
   text-decoration: none;
   color: #fff;
   margin-right: 20px; }
+  @media screen and (max-width: 768px) {
+    .social-media > a img {
+      max-width: 15%; } }
 
 .offer {
   background: -webkit-gradient(linear, left top, left bottom, from(#3c3c3c), to(rgba(0, 64, 255, 0.38))), url(../img/bg-2.jpg) no-repeat center/cover;
@@ -180,6 +187,29 @@ textarea::placeholder {
   color: #fff;
   border-radius: 10px;
   margin: 0; }
+
+.process {
+  margin: 60px; }
+  .process__title {
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif; }
+  .process .work-step {
+    letter-spacing: 0.025em; }
+    .process .work-step img {
+      max-width: 100%;
+      height: auto; }
+    .process .work-step__title {
+      margin: 25px 0 15px;
+      font-size: 1.375rem;
+      font-weight: 100;
+      font-family: 'Raleway', sans-serif; }
+    .process .work-step__descr {
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.6em; }
 
 .positions {
   margin: 190px 0 60px; }
@@ -326,6 +356,8 @@ textarea::placeholder {
 .contacts {
   margin: 160px 0 0px;
   min-height: 100vh; }
+  .contacts .title-contacts {
+    margin-bottom: 10px; }
   .contacts-info {
     margin-top: 40px;
     font-family: 'Roboto', sans-serif; }
@@ -339,26 +371,6 @@ textarea::placeholder {
       margin-bottom: 10px; }
     .contacts-info__email {
       margin-bottom: 10px; }
-
-.process {
-  margin: 60px; }
-  .process__title {
-    margin-bottom: 40px;
-    font-size: 30px;
-    font-weight: 700;
-    font-family: 'Raleway', sans-serif; }
-  .process .work-step {
-    letter-spacing: 0.025em; }
-    .process .work-step__title {
-      margin: 25px 0 15px;
-      font-size: 22px;
-      font-weight: 100;
-      font-family: 'Raleway', sans-serif; }
-    .process .work-step__descr {
-      font-family: 'Roboto', sans-serif;
-      font-size: 14px;
-      font-weight: 300;
-      line-height: 1.6em; }
 
 footer {
   background-color: #013957;
@@ -431,6 +443,9 @@ footer {
     color: #fff;
     padding-left: 60px;
     line-height: 1.6em; }
+    @media screen and (max-width: 1025px) {
+      footer .adress {
+        padding-left: 30px; } }
     footer .adress .adress-text {
       margin: 0;
       padding: 0; }
