@@ -14,9 +14,7 @@
 		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-		crossorigin="anonymous"></script>
+
 	<!-- Slick Slider -->
 	<link rel="stylesheet" href="css/style.css" />
 
@@ -25,46 +23,106 @@
 <body>
 	<header id="header" class="header">
 		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<nav class="navigation">
-						<a href="index.html" class="wrap-logo">
-							<img src="img/logo-1.svg" alt="" class="logo">
-						</a>
-						<ul class="menu-list">
-							<li class="menu-item active">
-								<a href="index.html" class="menu-item__link">Главная</a>
-							</li>
-							<li class="menu-item">
-								<a href="pages/positions.html" class="menu-item__link">Вакансии</a>
-							</li>
-							<li class="menu-item">
-								<a href="pages/services.html" class="menu-item__link">Услуги</a>
-							</li>
-							<li class="menu-item">
-								<a href="pages/about.html" class="menu-item__link">О нас</a>
-							</li>
-							<li class="menu-item">
-								<a href="pages/testimonials.html" class="menu-item__link">Отзывы</a>
-							</li>
-							<li class="menu-item">
-								<a href="pages/contacts.html" class="menu-item__link">Контакты</a>
-							</li>
-						</ul>
-						<div class="social-media">
-							<a href="https://www.instagram.com/agaoglu_agency_poltava/?hl=ru">
-								<img src="img/insta.svg" alt="Agaoglu Instagram">
-							</a>
-							<a href="https://www.facebook.com/ukrainepoltava/">
-								<img src="img/facebook.svg" alt="Agaoglu Facebook">
-							</a>
-							<a href="https://www.youtube.com/channel/UCAJ_2N1ynUZaRp7ljyLYTEQ">
-								<img src="img/youtube.svg" class="youtube-logo" alt="Agaoglu YouTube">
-							</a>
+			<div class="row justify-content-between">
+				<div class="col-lg-2 col-md-4 col-sm-7">
+					<a class="navbar-brand" href="#">
+						<img src="img/logo-1.svg" alt="" class="logo">
+					</a>
+				</div>
+
+				<div class="col-lg-10 col-md-8 col-sm-5">
+					<nav class="navbar navbar-expand-lg justify-content-end">
+						<button class="navbar-toggler" type="button" data-toggle="collapse"
+							data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+							aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+						</button>
+
+						<div class="collapse justify-content-between navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav menu-list text-center d-flex">
+								<li class="nav-item">
+									<a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Вакансии</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Услуги</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">О нас</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Отзывы</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Контакты</a>
+								</li>
+							</ul>
+							<div class="social-media ml-auto">
+								<a href="https://www.instagram.com/agaoglu_agency_poltava/?hl=ru">
+									<img src="img/insta.svg" alt="Agaoglu Instagram">
+								</a>
+								<a href="https://www.facebook.com/ukrainepoltava/">
+									<img src="img/facebook.svg" alt="Agaoglu Facebook">
+								</a>
+								<a href="https://www.youtube.com/channel/UCAJ_2N1ynUZaRp7ljyLYTEQ">
+									<img src="img/youtube.svg" class="youtube-logo" alt="Agaoglu YouTube">
+								</a>
+							</div>
 						</div>
 					</nav>
 				</div>
+
 			</div>
+			<!-- <div class="row">
+				<nav class="navbar navbar-expand-lg">
+					<a class="navbar-brand" href="#">
+						<img src="img/logo-1.svg" alt="" class="logo">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse align-items-center" id="navbarTogglerDemo02">
+						<ul class="navbar-nav mt-2 mt-lg-0 menu-list text-center ">
+							<li class="nav-item">
+								<a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Вакансии</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Услуги</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">О нас</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Отзывы</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Контакты</a>
+							</li>
+							</li>
+						</ul>
+						<form class="form-inline ml-auto my-2 my-lg-0">
+							<div class="social-media">
+								<a href="https://www.instagram.com/agaoglu_agency_poltava/?hl=ru">
+									<img src="img/insta.svg" alt="Agaoglu Instagram">
+								</a>
+								<a href="https://www.facebook.com/ukrainepoltava/">
+									<img src="img/facebook.svg" alt="Agaoglu Facebook">
+								</a>
+								<a href="https://www.youtube.com/channel/UCAJ_2N1ynUZaRp7ljyLYTEQ">
+									<img src="img/youtube.svg" class="youtube-logo" alt="Agaoglu YouTube">
+								</a>
+							</div>
+						</form>
+					</div>
+				</nav>
+			</div> -->
 		</div>
 	</header>
 	<main class="main" id="main">
@@ -137,7 +195,7 @@
 	</main>
 	<footer>
 		<div class="container">
-			<div class="row d-flex justify-content-center align-items-center">
+			<div class="row align-items-center d-flex justify-content-between">
 				<div class="col-2">
 					<a href="index.html">
 						<img src="img/logo.png" alt="">
@@ -169,7 +227,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col-4 text-center">
+				<div class="col-3 text-center">
 					<div class="social-media">
 						<a href="https://www.instagram.com/agaoglu_agency_poltava/?hl=ru">
 							<i class="fab fa-instagram"></i>
@@ -215,13 +273,15 @@
 	<script type="text/javascript" src="js/migrate.js"></script> -->
 
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-		crossorigin="anonymous"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
 		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
 		crossorigin="anonymous"></script>
-<script src="js/main.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
 </body>
 
 </html>
