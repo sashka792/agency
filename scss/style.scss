@@ -79,18 +79,24 @@ textarea {
 	position: absolute;
 	top: 50px;
 	width: 100%;
+	z-index: 11;
 }
 .header .navbar {
 	width: 100%;
   }
-.logo {
+.logo-desktop {
 	position: absolute;
 	z-index: 2;
 	transform: translateY(-50%);
 	top: 50%;
-	@media screen and (max-width: 992px) {
-		max-width: 100%;
-	}
+	// @media screen and (max-width: 992px) {
+	// 	max-width: 100%;
+	// 	display: none;
+	// }
+}
+.logo-mobile{
+	// background-color: #fff;
+	
 }
 .header .social-media a:last-child {
 	margin-right: 0;
@@ -101,11 +107,16 @@ textarea {
 .navbar-toggler {
 	z-index: 3;
 }
-
+.nav-row{
+	@media screen and (max-width: 992px) {
+		flex-direction: column;
+		text-align: center;
+	}
+}
 .menu-list {
 	list-style: none;
 	justify-content: center;
-	// margin: 0 0 0 9%;
+	margin-left: 45px;
 	@media (min-width: 768px) and (max-width: 1200px){
 		margin-left: 0;
 	}
@@ -139,6 +150,8 @@ textarea {
 }
 .fa-bars {
 	color: #fff;
+	border: 1px solid #fff;
+    padding: 10px;
 }
 .social-media {
 	display: flex;
@@ -147,10 +160,12 @@ textarea {
 		display: block;
 	}
 }
-.social-media > a{
-	text-decoration: none;
-	color: #fff;
-	margin-right: 20px;
+.social-media{
+	a {
+		text-decoration: none;
+		color: #fff;
+		margin-right: 20px;
+	}
 	img {
 		@media screen and (max-width: 768px) {
 			max-width: 15%;
@@ -196,6 +211,9 @@ textarea {
 // How we work
 .process{
 	margin: 60px;
+	@media screen and (max-width: 768){
+		flex-direction: column;
+	}
 	&__title{
 		margin-bottom: 40px;
 		font-size: 30px;
@@ -411,6 +429,11 @@ textarea {
 footer{
 	background-color: #013957;
 	font-family: 'Roboto', sans-serif;
+	.logo-footer {
+		@media screen and (max-width: 768px) {
+			margin-top: 20px;
+		}
+	}
 	.menu{
 		padding: 0;
 		font-size: 0.9rem;
@@ -422,6 +445,11 @@ footer{
 				color: #fff;
 				line-height: 1.25em;
 			}
+		}
+	}
+	.social-col {
+		@media screen and (max-width: 768px) {
+			order: 2;
 		}
 	}
 	.social-media {
@@ -448,6 +476,9 @@ footer{
 		color: #D5D5D5;
 		font-size: 12px;
 		margin: 20px 0 6px;
+		@media screen and (max-width: 768px) {
+			margin-top: 10px;
+		}
 	}
 	.developed {
 		margin: 0;
@@ -502,6 +533,9 @@ footer{
 		line-height: 1.6em;
 		@media screen and (max-width: 1025px) {
 			padding-left: 30px;
+		}
+		@media screen and (max-width: 768px) {
+			max-width: 200px;
 		}
 		.adress-text{
 			margin: 0;

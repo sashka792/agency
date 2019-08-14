@@ -71,21 +71,19 @@ textarea::placeholder {
   background-color: #00A8FF;
   position: absolute;
   top: 50px;
-  width: 100%; }
+  width: 100%;
+  z-index: 11; }
 
 .header .navbar {
   width: 100%; }
 
-.logo {
+.logo-desktop {
   position: absolute;
   z-index: 2;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   top: 50%; }
-  @media screen and (max-width: 992px) {
-    .logo {
-      max-width: 100%; } }
 
 .header .social-media a:last-child {
   margin-right: 0; }
@@ -96,11 +94,20 @@ textarea::placeholder {
 .navbar-toggler {
   z-index: 3; }
 
+@media screen and (max-width: 992px) {
+  .nav-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center; } }
+
 .menu-list {
   list-style: none;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  margin-left: 45px; }
   @media (min-width: 768px) and (max-width: 1200px) {
     .menu-list {
       margin-left: 0; } }
@@ -130,7 +137,9 @@ textarea::placeholder {
       align-content: center; }
 
 .fa-bars {
-  color: #fff; }
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px; }
 
 .social-media {
   display: -webkit-box;
@@ -143,13 +152,14 @@ textarea::placeholder {
     .social-media {
       display: block; } }
 
-.social-media > a {
+.social-media a {
   text-decoration: none;
   color: #fff;
   margin-right: 20px; }
-  @media screen and (max-width: 768px) {
-    .social-media > a img {
-      max-width: 15%; } }
+
+@media screen and (max-width: 768px) {
+  .social-media img {
+    max-width: 15%; } }
 
 .offer {
   background: -webkit-gradient(linear, left top, left bottom, from(#3c3c3c), to(rgba(0, 64, 255, 0.38))), url(../img/bg-2.jpg) no-repeat center/cover;
@@ -190,6 +200,12 @@ textarea::placeholder {
 
 .process {
   margin: 60px; }
+  @media screen and (max-width: 768) {
+    .process {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
   .process__title {
     margin-bottom: 40px;
     font-size: 30px;
@@ -375,6 +391,9 @@ textarea::placeholder {
 footer {
   background-color: #013957;
   font-family: 'Roboto', sans-serif; }
+  @media screen and (max-width: 768px) {
+    footer .logo-footer {
+      margin-top: 20px; } }
   footer .menu {
     padding: 0;
     font-size: 0.9rem;
@@ -385,6 +404,11 @@ footer {
         text-decoration: none;
         color: #fff;
         line-height: 1.25em; }
+  @media screen and (max-width: 768px) {
+    footer .social-col {
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+      order: 2; } }
   footer .social-media {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -404,6 +428,9 @@ footer {
     color: #D5D5D5;
     font-size: 12px;
     margin: 20px 0 6px; }
+    @media screen and (max-width: 768px) {
+      footer .copyright {
+        margin-top: 10px; } }
   footer .developed {
     margin: 0;
     padding: 0;
@@ -451,6 +478,9 @@ footer {
     @media screen and (max-width: 1025px) {
       footer .adress {
         padding-left: 30px; } }
+    @media screen and (max-width: 768px) {
+      footer .adress {
+        max-width: 200px; } }
     footer .adress .adress-text {
       margin: 0;
       padding: 0; }
