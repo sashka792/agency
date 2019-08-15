@@ -23,58 +23,57 @@
 <body>
 	<header id="header" class="header clearfix">
 		<div class="container">
-			<div class="row nav-row justify-content-between">
-				<div class="col-lg-2 col-md-12">
-					<a class="navbar-brand" href="#">
-						<img src="img/logo-1.svg" alt="" class="logo-desktop d-lg-block d-md-none">
-						<img src="img/logo-mobile.png" alt="" class="logo-mobile d-lg-none d-md-block">
+			<div class="row">
+				<nav class="navbar navbar-expand-lg ">
+					<a class="navbar-brand" href="index.html">
+						<img src="img/logo-1.svg" alt="" class="logo logo-desktop d-none">
 					</a>
-				</div>
+					<a class="navbar-brand mobile mr-auto d-flex align-items-center" href="index.html">
+						<img src="img/logo-mobile.png" alt="" class="logo logo-mobile d-none">
+						<p class="logo-name d-lg-none">Agaoglu Agency</p>
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon">
+							<i class="fas fa-bars"></i>
+						</span>
+					</button>
 
-				<div class="col-lg-10 col-md-12">
-					<nav class="navbar navbar-expand-lg justify-content-end">
-						<button class="navbar-toggler" type="button" data-toggle="collapse"
-							data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-							aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-						</button>
-
-						<div class="collapse justify-content-between navbar-collapse" id="navbarSupportedContent">
-							<ul class="navbar-nav menu-list text-center d-flex">
-								<li class="nav-item">
-									<a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">Вакансии</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">Услуги</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">О нас</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">Отзывы</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">Контакты</a>
-								</li>
-							</ul>
-							<div class="social-media ml-auto">
-								<a href="https://www.instagram.com/agaoglu_agency_poltava/?hl=ru">
-									<img src="img/insta.svg" alt="Agaoglu Instagram">
-								</a>
-								<a href="https://www.facebook.com/ukrainepoltava/">
-									<img src="img/facebook.svg" alt="Agaoglu Facebook">
-								</a>
-								<a href="https://www.youtube.com/channel/UCAJ_2N1ynUZaRp7ljyLYTEQ">
-									<img src="img/youtube.svg" class="youtube-logo" alt="Agaoglu YouTube">
-								</a>
-							</div>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav menu-list mr-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Вакансии</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Услуги</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">О нас</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Отзывы</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Контакты</a>
+							</li>
+						</ul>
+						<div class="social-media ml-auto">
+							<a href="https://www.instagram.com/agaoglu_agency_poltava/?hl=ru">
+								<img src="img/insta.svg" alt="Agaoglu Instagram">
+							</a>
+							<a href="https://www.facebook.com/ukrainepoltava/">
+								<img src="img/facebook.svg" alt="Agaoglu Facebook">
+							</a>
+							<a href="https://www.youtube.com/channel/UCAJ_2N1ynUZaRp7ljyLYTEQ">
+								<img src="img/youtube.svg" class="youtube-logo" alt="Agaoglu YouTube">
+							</a>
 						</div>
-					</nav>
-				</div>
-
+					</div>
+				</nav>
 			</div>
 		</div>
 		</div>
@@ -108,7 +107,7 @@
 					<div class="col-12">
 						<h2 class="process__title text-center">Как мы работаем</h2>
 					</div>
-					<div class="col-4 col-sm-12 mb-sm-5">
+					<div class="col-lg-4 col-sm-12 mb-sm-5">
 						<div class="work-step text-center">
 							<img src="img/p-1.jpg" alt="Agaoglu Agency interview">
 							<h3 class="work-step__title">Пробное собеседование</h3>
@@ -120,7 +119,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-4 col-sm-12 mb-sm-5">
+					<div class="col-lg-4 col-sm-12 mb-sm-5">
 						<div class="work-step text-center">
 							<img src="img/p-2.jpg" alt="Agaoglu Agency interview">
 							<h3 class="work-step__title">Составление резюме</h3>
@@ -131,7 +130,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-4 col-sm-12 mb-sm-5">
+					<div class="col-lg-4 col-sm-12 mb-sm-5">
 						<div class="work-step text-center">
 							<img src="img/p-3.jpg" alt="Agaoglu Agency interview">
 							<h3 class="work-step__title">Содействие в поиске работы</h3>
@@ -150,12 +149,12 @@
 	<footer>
 		<div class="container">
 			<div class="row align-items-center d-flex justify-content-between">
-				<div class="col-2 col-sm-12 text-sm-center">
+				<div class="col-lg-2 col-sm-12 text-sm-center">
 					<a href="index.html">
 						<img src="img/logo.png" alt="" class="logo-footer">
 					</a>
 				</div>
-				<div class="col-1 d-sm-none">
+				<div class="col-lg-1 d-md-block d-sm-none">
 					<ul class="menu">
 						<li class="menu-item">
 							<a href="#" class="menu-item__link">Главная</a>
@@ -168,7 +167,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col-1 d-sm-none">
+				<div class="col-lg-1 d-md-block d-sm-none">
 					<ul class="menu">
 						<li class="menu-item">
 							<a href="#" class="menu-item__link">Услуги</a>
@@ -181,7 +180,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col-3 text-center social-col col-sm-12">
+				<div class="col-lg-3 text-center social-col col-sm-12">
 					<div class="social-media">
 						<a href="https://www.instagram.com/agaoglu_agency_poltava/?hl=ru">
 							<i class="fab fa-instagram"></i>
@@ -200,7 +199,7 @@
 						Developed by <a href="http://shyian-code.site/">&lt;&sol;&gt;ShyianCode</a>
 					</p>
 				</div>
-				<div class="col-2 phone col-sm-6 text-center">
+				<div class="col-lg-2 phone col-sm-6 text-center">
 					<p class="phone-number">
 						+380 (50) 241 27 17
 					</p>
@@ -212,7 +211,7 @@
 								class="fab fa-telegram-plane"></i></a>
 					</div>
 				</div>
-				<div class="col-2 adress col-sm-6">
+				<div class="col-lg-2 adress col-sm-6">
 					<p class="adress-text">36004,</p>
 					<p class="adress-text">
 						Украина, г. Полтава
