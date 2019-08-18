@@ -14,44 +14,54 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="../css/style.css" />
 
 </head>
 
 <body>
-    <header id="header" class="header">
+    <header id="header" class="header clearfix">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <nav class="navigation">
-                        <a href="../index.html" class="wrap-logo">
-                            <img src="../img/logo-1.svg" alt="" class="logo">
-                        </a>
-                        <ul class="menu-list">
-                            <li class="menu-item">
-                                <a href="../index.html" class="menu-item__link">Главная</a>
+                <nav class="navbar navbar-expand-lg ">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="../img/logo-1.svg" alt="" class="logo logo-desktop d-none">
+                    </a>
+                    <a class="navbar-brand mobile mr-auto d-flex align-items-center" href="index.html">
+                        <img src="../img/logo-mobile.png" alt="" class="logo logo-mobile d-none">
+                        <p class="logo-name d-lg-none">Agaoglu Agency</p>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <i class="fas fa-bars"></i>
+                        </span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav menu-list mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Главная <span
+                                        class="sr-only">(current)</span></a>
                             </li>
-                            <li class="menu-item">
-                                <a href="../pages/positions.html" class="menu-item__link">Вакансии</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/positions.html">Вакансии</a>
                             </li>
-                            <li class="menu-item">
-                                <a href="../pages/services.html" class="menu-item__link">Услуги</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/services.html">Услуги</a>
                             </li>
-                            <li class="menu-item">
-                                <a href="../pages/about.html" class="menu-item__link">О нас</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/about.html">О нас</a>
                             </li>
-                            <li class="menu-item">
-                                <a href="../pages/testimonials.html" class="menu-item__link">Отзывы</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/testimonials.html">Отзывы</a>
                             </li>
-                            <li class="menu-item">
-                                <a href="contacts.html" class="menu-item__link">Контакты</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacts.html">Контакты</a>
                             </li>
                         </ul>
-                        <div class="social-media">
+                        <div class="social-media ml-auto">
                             <a href="https://www.instagram.com/agaoglu_agency_poltava/?hl=ru">
                                 <img src="../img/insta.svg" alt="Agaoglu Instagram">
                             </a>
@@ -62,9 +72,10 @@
                                 <img src="../img/youtube.svg" class="youtube-logo" alt="Agaoglu YouTube">
                             </a>
                         </div>
-                    </nav>
-                </div>
+                    </div>
+                </nav>
             </div>
+        </div>
         </div>
     </header>
     <main class="main" id="main">
@@ -114,8 +125,8 @@
                                 <p class="email">agaogluagency.poltava@gmail.com</p>
                                 <!-- /.email -->
                             </div>
-                             <!-- /.contacts-info__email -->
-                             <div class="contacts-info__mobile d-flex align-items-center">
+                            <!-- /.contacts-info__email -->
+                            <div class="contacts-info__mobile d-flex align-items-center">
                                 <i class="fas fa-mobile-alt"></i>
                                 <div class="number-wrap">
                                     <p class="number">
@@ -127,12 +138,12 @@
                                     <!-- /.number -->
                                 </div>
                                 <!-- /.number-wrap -->
-    
+
                             </div>
                             <!-- /.contacts-info__mobile -->
                         </div>
-                       
-                        
+
+
                     </div>
                 </div>
             </div>
@@ -142,13 +153,13 @@
     </main>
     <footer>
         <div class="container">
-            <div class="row d-flex justify-content-center align-items-center">
-                <div class="col-2">
+            <div class="row align-items-center d-flex justify-content-between">
+                <div class="col-lg-2 col-md-2 col-sm-12 text-sm-center">
                     <a href="index.html">
-                        <img src="../img/logo.png" alt="">
+                        <img src="../img/logo.png" alt="" class="logo-footer">
                     </a>
                 </div>
-                <div class="col-1">
+                <div class="col-lg-1 col-md-2 d-md-block d-sm-none">
                     <ul class="menu">
                         <li class="menu-item">
                             <a href="#" class="menu-item__link">Главная</a>
@@ -161,7 +172,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-1">
+                <div class="col-lg-1 col-md-2 d-md-block d-sm-none">
                     <ul class="menu">
                         <li class="menu-item">
                             <a href="#" class="menu-item__link">Услуги</a>
@@ -174,7 +185,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-4 text-center">
+                <div class="col-lg-3 col-md-12 text-center social-col col-sm-12">
                     <div class="social-media">
                         <a href="https://www.instagram.com/agaoglu_agency_poltava/?hl=ru">
                             <i class="fab fa-instagram"></i>
@@ -193,7 +204,7 @@
                         Developed by <a href="http://shyian-code.site/">&lt;&sol;&gt;ShyianCode</a>
                     </p>
                 </div>
-                <div class="col-2 phone">
+                <div class="col-lg-2 col-md-3 phone col-sm-6 text-center">
                     <p class="phone-number">
                         +380 (50) 241 27 17
                     </p>
@@ -205,7 +216,7 @@
                                 class="fab fa-telegram-plane"></i></a>
                     </div>
                 </div>
-                <div class="col-2 adress">
+                <div class="col-lg-2 col-md-3 adress col-sm-6">
                     <p class="adress-text">36004,</p>
                     <p class="adress-text">
                         Украина, г. Полтава
@@ -217,12 +228,15 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

@@ -73,13 +73,22 @@ textarea::placeholder {
   top: 50px;
   width: 100%;
   z-index: 2; }
+  .header .mobile {
+    position: static;
+    padding: 0;
+    margin: 0 auto; }
+  @media screen and (max-width: 991px) {
+    .header {
+      top: 0; } }
+  @media screen and (max-width: 768px) {
+    .header {
+      position: fixed; } }
 
 .navbar-brand {
   position: relative; }
   @media screen and (max-width: 992px) {
     .navbar-brand {
-      position: absolute;
-      top: -30px; } }
+      position: absolute; } }
 
 .menu-list {
   list-style: none;
@@ -109,7 +118,7 @@ textarea::placeholder {
     @media screen and (max-width: 768px) {
       .menu-list a {
         margin-right: 15px;
-        font-size: 0.65rem; } }
+        font-size: 0.8rem; } }
     .menu-list a:hover {
       border-bottom: 2px #fff solid;
       -ms-flex-line-pack: center;
@@ -127,7 +136,8 @@ textarea::placeholder {
       .navbar .logo-desktop {
         display: block !important; } }
   .navbar .logo-mobile {
-    max-width: 100px; }
+    max-width: 100px;
+    margin-right: 20px; }
     @media screen and (max-width: 991px) {
       .navbar .logo-mobile {
         display: block !important; } }
@@ -136,9 +146,8 @@ textarea::placeholder {
         max-width: 60px; } }
   .navbar .logo-name {
     color: #fff; }
-  @media screen and (max-width: 991px) {
-    .navbar .navbar-toggler {
-      margin-left: auto; } }
+  .navbar .navbar-nav .nav-link {
+    color: #fff; }
   .navbar .navbar-toggler-icon {
     color: #fff;
     border: 1px solid #fff;
@@ -153,22 +162,21 @@ textarea::placeholder {
         padding-left: 0; } }
     @media screen and (max-width: 992px) {
       .navbar .navbar-collapse .menu-list {
-        margin-left: 0;
         padding-left: 0; } }
     @media screen and (max-width: 992px) {
       .navbar .navbar-collapse .menu-list a {
         margin-right: 0; } }
-    @media screen and (max-width: 992px) {
-      .navbar .navbar-collapse .social-media a {
-        margin: 0 10px; } }
+    .navbar .navbar-collapse .social-media a {
+      margin-left: 20px; }
+      @media screen and (max-width: 992px) {
+        .navbar .navbar-collapse .social-media a {
+          margin: 0 10px; } }
     @media screen and (max-width: 992px) {
       .navbar .navbar-collapse .social-media {
         margin: 20px 0; } }
     @media screen and (max-width: 992px) {
       .navbar .navbar-collapse {
         text-align: center; } }
-  .navbar .navbar-nav .nav-link {
-    color: #fff; }
 
 .offer {
   background: -webkit-gradient(linear, left top, left bottom, from(#3c3c3c), to(rgba(0, 64, 255, 0.38))), url(../img/bg-2.jpg) no-repeat center/cover;
@@ -190,6 +198,9 @@ textarea::placeholder {
     font-size: 2.2rem;
     font-weight: 700;
     color: #fff; }
+    @media screen and (min-width: 320px) {
+      .offer .offer__title {
+        font-size: 1.6rem; } }
   .offer .offer__text {
     margin: 0;
     max-width: 640px;
@@ -207,9 +218,15 @@ textarea::placeholder {
     color: #fff;
     border-radius: 10px;
     margin: 0; }
+    @media screen and (min-width: 320px) {
+      .offer .offer__description {
+        font-size: 1rem; } }
 
 .process {
   margin: 60px; }
+  @media screen and (min-width: 320px) {
+    .process {
+      margin: 60px 0 0 0; } }
   @media screen and (max-width: 768) {
     .process {
       -webkit-box-orient: vertical;
@@ -222,7 +239,8 @@ textarea::placeholder {
     font-weight: 700;
     font-family: 'Raleway', sans-serif; }
   .process .work-step {
-    letter-spacing: 0.025em; }
+    letter-spacing: 0.025em;
+    margin-bottom: 50px; }
     .process .work-step img {
       max-width: 100%;
       height: auto; }
@@ -231,11 +249,17 @@ textarea::placeholder {
       font-size: 1.375rem;
       font-weight: 100;
       font-family: 'Raleway', sans-serif; }
+      @media screen and (max-width: 320px) {
+        .process .work-step__title {
+          font-size: 1rem; } }
     .process .work-step__descr {
       font-family: 'Roboto', sans-serif;
       font-size: 14px;
       font-weight: 300;
       line-height: 1.6em; }
+      @media screen and (max-width: 320px) {
+        .process .work-step__descr {
+          font-size: 0.8rem; } }
 
 .positions {
   margin: 190px 0 60px; }
@@ -402,8 +426,17 @@ footer {
   background-color: #013957;
   font-family: 'Roboto', sans-serif; }
   @media screen and (max-width: 768px) {
+    footer {
+      padding-top: 20px; } }
+  @media screen and (max-width: 320px) {
+    footer {
+      text-align: center; } }
+  @media screen and (max-width: 768px) {
     footer .logo-footer {
-      margin-top: 20px; } }
+      max-width: 80px;
+      -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+      order: 0; } }
   footer .menu {
     padding: 0;
     font-size: 0.9rem;
@@ -414,18 +447,28 @@ footer {
         text-decoration: none;
         color: #fff;
         line-height: 1.25em; }
+    @media screen and (max-width: 768px) {
+      footer .menu {
+        margin-top: 10px;
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1; } }
   @media screen and (max-width: 768px) {
     footer .social-col {
-      -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-      order: 2; } }
+      -webkit-box-ordinal-group: 7;
+      -ms-flex-order: 6;
+      order: 6;
+      margin-top: 20px; } }
   footer .social-media {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
     footer .social-media a {
+      margin-right: 20px;
       text-decoration: none;
       color: #fff; }
+    footer .social-media a:last-child {
+      margin-right: 0; }
     footer .social-media .fab {
       font-size: 1.4rem; }
     footer .social-media .fa-instagram:hover {
@@ -457,7 +500,10 @@ footer {
     color: #fff; }
     @media screen and (max-width: 768px) {
       footer .phone {
-        font-size: 0.9rem; } }
+        font-size: 0.9rem;
+        -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+        order: 5; } }
     footer .phone .messengers {
       margin-top: 10px;
       color: #fff;
@@ -483,14 +529,20 @@ footer {
   footer .adress {
     font-size: 12px;
     color: #fff;
-    max-width: 142px;
+    max-width: 145px;
     line-height: 1.6em; }
     @media screen and (max-width: 1025px) {
       footer .adress {
         padding-left: 30px; } }
     @media screen and (max-width: 768px) {
       footer .adress {
-        max-width: 200px; } }
+        max-width: 160px;
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+        order: 3; } }
+    @media screen and (max-width: 320px) {
+      footer .adress {
+        display: none; } }
     footer .adress .adress-text {
       margin: 0;
       padding: 0; }

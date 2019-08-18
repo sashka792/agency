@@ -83,12 +83,23 @@ textarea {
 	top: 50px;
 	width: 100%;
 	z-index: 2;
+	.mobile{
+		position: static;
+		padding: 0;
+		margin: 0 auto;
+	}
+	@media screen and (max-width: 991px) {
+		top: 0;
+	}
+	@media screen and (max-width: 768px) {
+		position: fixed;
+	}
 }
 .navbar-brand{
 	position: relative;
 	@media screen and (max-width: 992px) {
 		position: absolute;
-    	top: -30px;
+    	// top: -30px;
 	}
 }
 .menu-list {
@@ -117,11 +128,14 @@ textarea {
 		}
 		@media screen and (max-width: 768px) {
 			margin-right: 15px;
-			font-size: 0.65rem;
+			font-size: 0.8rem;
 		}
 		&:hover{
 			border-bottom: 2px #fff solid;
 			align-content: center;
+			@media screen and (max-width: 768px) {
+				
+			}
 		}
 		
 	}
@@ -132,12 +146,16 @@ textarea {
 		position: absolute;
 		transform: translateY(-50%);
 		top: 50%;
+		@media screen and (min-width: 991px) {
+			// top: 70px;	
+		}
 		@media screen and (min-width: 992px) {
 			display: block !important;	
 		}
 	}
 	.logo-mobile {
 		max-width: 100px;
+		margin-right: 20px;
 		@media screen and (max-width: 991px) {
 			display: block !important;	
 		}
@@ -148,9 +166,14 @@ textarea {
 	.logo-name {
 		color: #fff;
 	}
+	.navbar-nav{
+		.nav-link{
+			color: #fff;
+		}
+	}
 	.navbar-toggler {
 		@media screen and (max-width: 991px) {
-			margin-left: auto;
+			// margin-left: auto;
 		}
 	}
 	.navbar-toggler-icon {
@@ -169,7 +192,7 @@ textarea {
 		}
 		.menu-list {
 			@media screen and (max-width: 992px) {
-				margin-left: 0;
+				// margin-left: 80px;
 				padding-left: 0;
 			}
 		}
@@ -181,6 +204,7 @@ textarea {
 		}
 		.social-media{
 			a {
+				margin-left: 20px;
 				@media screen and (max-width: 992px) {
 					margin: 0 10px;	
 				}	
@@ -193,11 +217,7 @@ textarea {
 			text-align: center;	
 		}
 	}
-	.navbar-nav{
-		.nav-link{
-			color: #fff;
-		}
-	}
+	
 }
 
 // Offer
@@ -216,6 +236,9 @@ textarea {
 		font-size: 2.2rem;
 		font-weight: 700;
 		color: #fff;
+		@media screen and (min-width: 320px){
+			font-size: 1.6rem;
+		}
 	}
 	.offer__text{
 		margin: 0;
@@ -223,6 +246,7 @@ textarea {
 		padding: 15px;
 		margin: 0 auto;
 	}
+	
 	.offer__description {
 		font-family: 'Roboto', sans-serif;
 		align-items: center;
@@ -233,12 +257,18 @@ textarea {
 		color: #fff; 
 		border-radius: 10px;
 		margin: 0;
+		@media screen and (min-width: 320px){
+			font-size: 1rem;
+		}
 	}
 }
 
 // How we work
 .process{
 	margin: 60px;
+	@media screen and (min-width: 320px){
+		margin: 60px 0 0 0;
+	}
 	@media screen and (max-width: 768){
 		flex-direction: column;
 	}
@@ -250,22 +280,29 @@ textarea {
 	}
 	.work-step{
 		letter-spacing: 0.025em;
+		margin-bottom: 50px;
 		img{
 			max-width: 100%;
 			height: auto;
-		}
+		}	
 		&__title{
 			margin: 25px 0 15px;
 			// font-size: 22px;
 			font-size: 1.375rem;
 			font-weight: 100;
 			font-family: 'Raleway', sans-serif;
+			@media screen and (max-width: 320px){
+				font-size: 1rem;
+			}
 		}
 		&__descr{
 			font-family: 'Roboto', sans-serif;
 			font-size: 14px;
 			font-weight: 300;
 			line-height: 1.6em;
+			@media screen and (max-width: 320px){
+				font-size: 0.8rem;
+			}
 		}
 	}
 }
@@ -457,9 +494,17 @@ textarea {
 footer{
 	background-color: #013957;
 	font-family: 'Roboto', sans-serif;
+	@media screen and (max-width: 768px) {
+		padding-top: 20px;
+	}
+	@media screen and (max-width: 320px) {
+		text-align: center;
+	}
 	.logo-footer {
 		@media screen and (max-width: 768px) {
-			margin-top: 20px;
+			// margin-top: 20px;
+			max-width: 80px;
+			order: 0;
 		}
 	}
 	.menu{
@@ -474,17 +519,27 @@ footer{
 				line-height: 1.25em;
 			}
 		}
+		@media screen and (max-width: 768px) {
+			margin-top: 10px;
+			order: 1;
+		}
 	}
 	.social-col {
 		@media screen and (max-width: 768px) {
-			order: 2;
+			order: 6;
+			margin-top: 20px;
 		}
 	}
 	.social-media {
 		justify-content: center;
+		
 		a{
+			margin-right: 20px;
 			text-decoration: none;
 			color: #fff;
+		}
+		a:last-child {
+			margin-right: 0;
 		}
 		.fab{
 			font-size: 1.4rem;
@@ -524,6 +579,7 @@ footer{
 		color: #fff;
 		@media screen and (max-width: 768px) {
 			font-size: 0.9rem;
+			order: 5;
 		} 
 		.messengers {
 			margin-top: 10px;
@@ -557,17 +613,28 @@ footer{
 		font-size: 12px;
 		color: #fff;
 		// padding-left: 60px;
-		max-width: 142px;
+		max-width: 145px;
 		line-height: 1.6em;
 		@media screen and (max-width: 1025px) {
 			padding-left: 30px;
 		}
 		@media screen and (max-width: 768px) {
-			max-width: 200px;
+			max-width: 160px;
+			order: 3;
+		}
+		@media screen and (max-width: 320px) {
+			display: none;
 		}
 		.adress-text{
 			margin: 0;
 			padding: 0;
 		}
 	}
+}
+
+@media screen and (max-width: 992px) {
+
+}
+@media screen and (max-width: 768px) {
+	
 }
