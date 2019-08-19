@@ -2,7 +2,7 @@
 body {
   margin: 0; }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, ul {
   margin: 0;
   padding: 0; }
 
@@ -22,14 +22,12 @@ button {
   width: 100%;
   padding: 10px; }
 
-.menu-list .active a {
-  border-bottom: 2px solid #fff; }
-
 input[type="submit"],
 input[type="button"],
 button,
 .button {
-  display: inline-block; }
+  display: inline-block;
+  font-family: 'Roboto', sans-serif; }
 
 input[type="text"],
 input[type="email"],
@@ -38,11 +36,11 @@ input[type="number"],
 input[type="tel"],
 textarea,
 select {
-  background-color: #B0E3FE;
-  border: 1px solid #00A8FF;
+  background: rgba(146, 201, 229, 0.2);
+  border: 1px solid #00a8ff;
   border-radius: 10px;
   font-family: 'Roboto', sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 14px;
   margin: 5px 0;
   width: 100%;
@@ -84,22 +82,13 @@ textarea::placeholder {
     .header {
       position: fixed; } }
 
-.navbar-brand {
-  position: relative; }
-  @media screen and (max-width: 992px) {
-    .navbar-brand {
-      position: absolute; } }
-
 .menu-list {
   list-style: none;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   margin-left: 95px; }
-  @media (min-width: 768px) and (max-width: 1200px) {
-    .menu-list {
-      margin-left: 0; } }
-  @media (min-width: 320px) {
+  @media (min-width: 320px) and (max-width: 1200px) {
     .menu-list {
       margin-left: 0; } }
   .menu-list a {
@@ -112,17 +101,22 @@ textarea::placeholder {
     margin-right: 20px;
     padding-bottom: 5px;
     border-bottom: 2px transparent solid; }
-    @media screen and (max-width: 992px) {
+    @media screen and (min-width: 320px) and (max-width: 768px) {
       .menu-list a {
-        font-size: 0.9rem; } }
-    @media screen and (max-width: 768px) {
-      .menu-list a {
-        margin-right: 15px;
-        font-size: 0.8rem; } }
+        margin-right: 15px; } }
     .menu-list a:hover {
       border-bottom: 2px #fff solid;
       -ms-flex-line-pack: center;
       align-content: center; }
+      @media screen and (min-width: 320px) and (max-width: 768px) {
+        .menu-list a:hover {
+          border-bottom: 2px transparent solid; } }
+
+.navbar-brand {
+  position: relative; }
+  @media screen and (max-width: 992px) {
+    .navbar-brand {
+      position: absolute; } }
 
 .navbar {
   width: 100%; }
@@ -136,7 +130,7 @@ textarea::placeholder {
       .navbar .logo-desktop {
         display: block !important; } }
   .navbar .logo-mobile {
-    max-width: 100px;
+    max-width: 60px;
     margin-right: 20px; }
     @media screen and (max-width: 991px) {
       .navbar .logo-mobile {
@@ -226,7 +220,7 @@ textarea::placeholder {
   margin: 60px; }
   @media screen and (min-width: 320px) {
     .process {
-      margin: 60px 0 0 0; } }
+      margin: 60px 0 0 60px; } }
   @media screen and (max-width: 768) {
     .process {
       -webkit-box-orient: vertical;
@@ -263,90 +257,84 @@ textarea::placeholder {
 
 .positions {
   margin: 190px 0 60px; }
-
-.partners-logo {
-  height: 125px; }
-
-.position {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  border-radius: 10px;
-  overflow: hidden; }
-  .position img {
-    max-width: 100%; }
-
-.position__overlay {
-  background: rgba(0, 0, 0, 0.64);
-  color: #fff;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column; }
-  .position__overlay-title {
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 10px; }
-  .position__overlay-salary {
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    margin-bottom: 20px; }
-  .position__overlay-description {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    margin-bottom: 30px; }
-  .position__overlay-messengers {
+  .positions .position {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    .position__overlay-messengers .icon {
-      color: #fff; }
-      .position__overlay-messengers .icon i {
-        font-size: 35px;
-        margin: 0 20px; }
-        .position__overlay-messengers .icon i:hover {
-          cursor: pointer; }
-      .position__overlay-messengers .icon .fa-whatsapp:hover {
-        color: #2fd14b; }
-      .position__overlay-messengers .icon .fa-viber:hover {
-        color: #795098; }
-      .position__overlay-messengers .icon .fa-telegram-plane:hover {
-        color: #2ba0da; }
-
-.position:hover .position__overlay {
-  opacity: 1; }
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden; }
+    .positions .position img {
+      max-width: 100%; }
+    .positions .position .position__overlay {
+      background: rgba(0, 0, 0, 0.64);
+      color: #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+      -webkit-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      text-align: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .positions .position .position__overlay-title {
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px; }
+      .positions .position .position__overlay-salary {
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        margin-bottom: 20px; }
+      .positions .position .position__overlay-description {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 30px; }
+      .positions .position .position__overlay-messengers {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .positions .position .position__overlay-messengers .icon {
+          color: #fff; }
+          .positions .position .position__overlay-messengers .icon i {
+            font-size: 35px;
+            margin: 0 20px; }
+            .positions .position .position__overlay-messengers .icon i:hover {
+              cursor: pointer; }
+          .positions .position .position__overlay-messengers .icon .fa-whatsapp:hover {
+            color: #2fd14b; }
+          .positions .position .position__overlay-messengers .icon .fa-viber:hover {
+            color: #795098; }
+          .positions .position .position__overlay-messengers .icon .fa-telegram-plane:hover {
+            color: #2ba0da; }
+  .positions .position:hover .position__overlay {
+    opacity: 1; }
 
 .img-team {
   width: 255px; }
@@ -361,6 +349,9 @@ textarea::placeholder {
     text-align: center; }
   .partners .single-partner img {
     height: 150px; }
+
+.partners-logo {
+  height: 125px; }
 
 .slick-dots li {
   margin: 0; }
@@ -403,8 +394,7 @@ textarea::placeholder {
   width: 600px; }
 
 .contacts {
-  margin: 160px 0 0px;
-  min-height: 100vh; }
+  margin: 140px 0 100px; }
   .contacts .title-contacts {
     margin-bottom: 10px; }
   .contacts-info {
@@ -423,22 +413,29 @@ textarea::placeholder {
 
 footer {
   background-color: #013957;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem; }
+  @media screen and (max-width: 991px) {
+    footer .footer-desktop-nav {
+      display: none !important; } }
   @media screen and (max-width: 768px) {
     footer {
       padding-top: 20px; } }
-  @media screen and (max-width: 320px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     footer {
       text-align: center; } }
   @media screen and (max-width: 768px) {
     footer .logo-footer {
-      max-width: 80px;
+      max-width: 100px;
       -webkit-box-ordinal-group: 1;
       -ms-flex-order: 0;
       order: 0; } }
+  @media screen and (max-width: 480px) {
+    footer .logo-footer {
+      margin: 25px auto; } }
   footer .menu {
     padding: 0;
-    font-size: 0.9rem;
+    margin: 0;
     list-style: none; }
     footer .menu li {
       margin-bottom: 10px; }
@@ -446,6 +443,8 @@ footer {
         text-decoration: none;
         color: #fff;
         line-height: 1.25em; }
+      footer .menu li :last-child {
+        margin-bottom: 0px; }
     @media screen and (max-width: 768px) {
       footer .menu {
         margin-top: 10px;
@@ -478,8 +477,8 @@ footer {
       color: #ff0000; }
   footer .copyright {
     color: #D5D5D5;
-    font-size: 12px;
-    margin: 20px 0 6px; }
+    font-size: 0.7rem;
+    margin: 10px 0 6px; }
     @media screen and (max-width: 768px) {
       footer .copyright {
         margin-top: 10px; } }
@@ -487,7 +486,7 @@ footer {
     margin: 0;
     padding: 0;
     color: #7f9eac;
-    font-size: 10px;
+    font-size: 0.6rem;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end; }
@@ -499,12 +498,17 @@ footer {
     color: #fff; }
     @media screen and (max-width: 768px) {
       footer .phone {
+        margin: 0 auto;
         font-size: 0.9rem;
         -webkit-box-ordinal-group: 6;
         -ms-flex-order: 5;
         order: 5; } }
+    @media screen and (max-width: 480px) {
+      footer .phone {
+        padding: 0;
+        margin: 30px auto; } }
     footer .phone .messengers {
-      margin-top: 10px;
+      margin-top: 5px;
       color: #fff;
       font-size: 1.2rem;
       -webkit-box-align: center;
@@ -523,27 +527,72 @@ footer {
         color: #2fd14b; }
       footer .phone .messengers .fa-viber:hover {
         color: #795098; }
+      footer .phone .messengers .fa-telegram-plane {
+        margin-right: 0px; }
       footer .phone .messengers .fa-telegram-plane:hover {
         color: #2ba0da; }
   footer .adress {
-    font-size: 12px;
     color: #fff;
-    max-width: 145px;
     line-height: 1.6em; }
-    @media screen and (max-width: 1025px) {
-      footer .adress {
-        padding-left: 30px; } }
     @media screen and (max-width: 768px) {
       footer .adress {
-        max-width: 160px;
         -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
         order: 3; } }
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 480px) {
       footer .adress {
-        display: none; } }
+        padding: 0;
+        margin: 30px auto; } }
     footer .adress .adress-text {
       margin: 0;
       padding: 0; }
+
+.mobile-bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  will-change: transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  -webkit-box-shadow: 0 -1px 21px -4px #9b9b9b;
+  box-shadow: 0 -1px 21px -4px #9b9b9b;
+  background-color: #fff; }
+  .mobile-bottom-nav__item {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .mobile-bottom-nav__item--active {
+    color: red; }
+  .mobile-bottom-nav__item-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .mobile-bottom-nav__item-content i {
+      font-size: 2rem; }
+  @media screen and (min-width: 992px) {
+    .mobile-bottom-nav {
+      display: none; } }
 
 /*# sourceMappingURL=style.css.map */
