@@ -7,6 +7,12 @@ h1, h2, h3, h4, h5, h6, p, ul {
 	padding: 0;
 }
 
+.block-title{
+	margin-bottom: 40px;
+	font-size: 1.875rem;
+	font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+}
 /* Typography */
 a,
 input[type="submit"],
@@ -146,6 +152,7 @@ textarea::placeholder {
 		}
 	}
 	.navbar-toggler {
+		line-height: 1.25;
 		@media screen and (max-width: 991px) {
 			// margin-left: auto;
 		}
@@ -192,7 +199,12 @@ textarea::placeholder {
 		}
 	}
 }
-
+.main {
+	margin: 180px 0 60px;
+	@media screen and (max-width: 768px){
+		margin: 120px 0 60px;
+	}
+}
 // Offer
 .offer {
 	background: linear-gradient(to bottom, rgb(60, 60, 60) 0%, rgba(0, 64, 255, 0.38) 100%), url(../img/bg-2.jpg) no-repeat center/cover;
@@ -253,7 +265,6 @@ textarea::placeholder {
 	}
 	.work-step{
 		letter-spacing: 0.025em;
-		margin-bottom: 50px;
 		img{
 			max-width: 100%;
 			height: auto;
@@ -282,14 +293,15 @@ textarea::placeholder {
 
 // Positions
 .positions{
-	margin: 190px 0 60px;
 	.position {
 		display: flex;
 		position: relative;
 		border-radius: 10px;
 		overflow: hidden;
+		margin-bottom: 30px;
 		img{
 			max-width: 100%;
+			width: 100%;
 		}
 		.position__overlay {
 			background: rgba(0,0,0,0.64);
@@ -357,11 +369,20 @@ textarea::placeholder {
 	}
 }
 
+.about{
+	.partners-title{
+		margin-bottom: 40px;
+	}
+}
+
 // Team
 .img-team{
 	width: 255px;
 }
-
+.partners-logo{
+	height: auto;
+	max-width: 100%;
+}
 // Slick partners
 .partners {
     background-size: cover;
@@ -374,13 +395,11 @@ textarea::placeholder {
 		text-align: center;
 	}
 	.single-partner img {
-		height: 150px;
+		height: 100px;
 		// margin: 0 auto 20px;
 	}
 }
-.partners-logo{
-	height: 125px;
-}
+
 .slick-dots li {
     margin: 0;
 }
@@ -400,7 +419,6 @@ textarea::placeholder {
 // Testimonials
 .testimonials {
 	color: #000;
-	margin: 160px 0 60px;
 	.wrap-img {
 		width: 100%;
 		height: 160px;
@@ -434,17 +452,33 @@ textarea::placeholder {
   
 // Contacts
 .wrap-map {
-	width: 600px;
+	max-width: 100%;
+	height: 100%;
+	@media screen and (max-width: 768px){
+		min-height: 400px;
+	}
+	@media screen and (max-width: 425px){
+		min-height: 250px;
+	}
+}
+.contact-form__form{
+	@media screen and (max-width: 768px){
+		margin-top: 30px;
+	}
 }
 .contacts {
-	margin: 140px 0 100px;
+	margin-bottom: 100px;
 	// min-height: 100vh;
 	.title-contacts{
 		margin-bottom: 10px;
 	}
 	&-info{
 		margin-top: 40px;
-		font-family: 'Roboto', sans-serif; 
+		font-family: 'Roboto', sans-serif;
+		a{
+			color: #000;
+			text-decoration: none;
+		}
 		.fas {
 			margin-right: 25px;
 			font-size: 25px;
@@ -466,14 +500,14 @@ textarea::placeholder {
 footer{
 	background-color: #013957;
 	font-family: 'Roboto', sans-serif;
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 	.footer-desktop-nav {
 		@media screen and (max-width: 991px) {
 			display: none!important;
 		}
 	}
 	@media screen and (max-width: 768px) {
-		padding-top: 20px;
+		// padding-top: 20px;
 	}
 	@media screen and (min-width: 320px) and (max-width: 767px) {
 		text-align: center;
@@ -526,7 +560,7 @@ footer{
 			margin-right: 0;
 		}
 		.fab{
-			font-size: 1.4rem;
+			font-size: 1.3rem;
 		}
 		.fa-instagram:hover{
 			color:#e3436b;

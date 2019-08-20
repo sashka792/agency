@@ -6,6 +6,12 @@ h1, h2, h3, h4, h5, h6, p, ul {
   margin: 0;
   padding: 0; }
 
+.block-title {
+  margin-bottom: 40px;
+  font-size: 1.875rem;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif; }
+
 /* Typography */
 a,
 input[type="submit"],
@@ -142,6 +148,8 @@ textarea::placeholder {
     color: #fff; }
   .navbar .navbar-nav .nav-link {
     color: #fff; }
+  .navbar .navbar-toggler {
+    line-height: 1.25; }
   .navbar .navbar-toggler-icon {
     color: #fff;
     border: 1px solid #fff;
@@ -171,6 +179,12 @@ textarea::placeholder {
     @media screen and (max-width: 992px) {
       .navbar .navbar-collapse {
         text-align: center; } }
+
+.main {
+  margin: 180px 0 60px; }
+  @media screen and (max-width: 768px) {
+    .main {
+      margin: 120px 0 60px; } }
 
 .offer {
   background: -webkit-gradient(linear, left top, left bottom, from(#3c3c3c), to(rgba(0, 64, 255, 0.38))), url(../img/bg-2.jpg) no-repeat center/cover;
@@ -233,8 +247,7 @@ textarea::placeholder {
     font-weight: 700;
     font-family: 'Raleway', sans-serif; }
   .process .work-step {
-    letter-spacing: 0.025em;
-    margin-bottom: 50px; }
+    letter-spacing: 0.025em; }
     .process .work-step img {
       max-width: 100%;
       height: auto; }
@@ -255,89 +268,97 @@ textarea::placeholder {
         .process .work-step__descr {
           font-size: 0.8rem; } }
 
-.positions {
-  margin: 190px 0 60px; }
-  .positions .position {
+.positions .position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 30px; }
+  .positions .position img {
+    max-width: 100%;
+    width: 100%; }
+  .positions .position .position__overlay {
+    background: rgba(0, 0, 0, 0.64);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden; }
-    .positions .position img {
-      max-width: 100%; }
-    .positions .position .position__overlay {
-      background: rgba(0, 0, 0, 0.64);
-      color: #fff;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      opacity: 0;
-      -webkit-transition: all 0.5s ease;
-      -o-transition: all 0.5s ease;
-      transition: all 0.5s ease;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .positions .position .position__overlay-title {
+      font-family: 'Raleway', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px; }
+    .positions .position .position__overlay-salary {
+      font-family: 'Raleway', sans-serif;
+      font-size: 16px;
+      margin-bottom: 20px; }
+    .positions .position .position__overlay-description {
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      margin-bottom: 30px; }
+    .positions .position .position__overlay-messengers {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
       -webkit-box-align: center;
       -ms-flex-align: center;
-      align-items: center;
-      text-align: center;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column; }
-      .positions .position .position__overlay-title {
-        font-family: 'Raleway', sans-serif;
-        font-size: 18px;
-        font-weight: 700;
-        margin-bottom: 10px; }
-      .positions .position .position__overlay-salary {
-        font-family: 'Raleway', sans-serif;
-        font-size: 16px;
-        margin-bottom: 20px; }
-      .positions .position .position__overlay-description {
-        font-family: 'Roboto', sans-serif;
-        font-size: 14px;
-        font-weight: 300;
-        margin-bottom: 30px; }
-      .positions .position .position__overlay-messengers {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center; }
-        .positions .position .position__overlay-messengers .icon {
-          color: #fff; }
-          .positions .position .position__overlay-messengers .icon i {
-            font-size: 35px;
-            margin: 0 20px; }
-            .positions .position .position__overlay-messengers .icon i:hover {
-              cursor: pointer; }
-          .positions .position .position__overlay-messengers .icon .fa-whatsapp:hover {
-            color: #2fd14b; }
-          .positions .position .position__overlay-messengers .icon .fa-viber:hover {
-            color: #795098; }
-          .positions .position .position__overlay-messengers .icon .fa-telegram-plane:hover {
-            color: #2ba0da; }
-  .positions .position:hover .position__overlay {
-    opacity: 1; }
+      align-items: center; }
+      .positions .position .position__overlay-messengers .icon {
+        color: #fff; }
+        .positions .position .position__overlay-messengers .icon i {
+          font-size: 35px;
+          margin: 0 20px; }
+          .positions .position .position__overlay-messengers .icon i:hover {
+            cursor: pointer; }
+        .positions .position .position__overlay-messengers .icon .fa-whatsapp:hover {
+          color: #2fd14b; }
+        .positions .position .position__overlay-messengers .icon .fa-viber:hover {
+          color: #795098; }
+        .positions .position .position__overlay-messengers .icon .fa-telegram-plane:hover {
+          color: #2ba0da; }
+
+.positions .position:hover .position__overlay {
+  opacity: 1; }
+
+.about .partners-title {
+  margin-bottom: 40px; }
 
 .img-team {
   width: 255px; }
+
+.partners-logo {
+  height: auto;
+  max-width: 100%; }
 
 .partners {
   background-size: cover;
@@ -348,10 +369,7 @@ textarea::placeholder {
   .partners .single-partner {
     text-align: center; }
   .partners .single-partner img {
-    height: 150px; }
-
-.partners-logo {
-  height: 125px; }
+    height: 100px; }
 
 .slick-dots li {
   margin: 0; }
@@ -366,8 +384,7 @@ textarea::placeholder {
   color: #fff; }
 
 .testimonials {
-  color: #000;
-  margin: 160px 0 60px; }
+  color: #000; }
   .testimonials .wrap-img {
     width: 100%;
     height: 160px;
@@ -391,15 +408,29 @@ textarea::placeholder {
     margin: 20px 10px 0px 20px; }
 
 .wrap-map {
-  width: 600px; }
+  max-width: 100%;
+  height: 100%; }
+  @media screen and (max-width: 768px) {
+    .wrap-map {
+      min-height: 400px; } }
+  @media screen and (max-width: 425px) {
+    .wrap-map {
+      min-height: 250px; } }
+
+@media screen and (max-width: 768px) {
+  .contact-form__form {
+    margin-top: 30px; } }
 
 .contacts {
-  margin: 140px 0 100px; }
+  margin-bottom: 100px; }
   .contacts .title-contacts {
     margin-bottom: 10px; }
   .contacts-info {
     margin-top: 40px;
     font-family: 'Roboto', sans-serif; }
+    .contacts-info a {
+      color: #000;
+      text-decoration: none; }
     .contacts-info .fas {
       margin-right: 25px;
       font-size: 25px;
@@ -414,13 +445,10 @@ textarea::placeholder {
 footer {
   background-color: #013957;
   font-family: 'Roboto', sans-serif;
-  font-size: 0.9rem; }
+  font-size: 0.8rem; }
   @media screen and (max-width: 991px) {
     footer .footer-desktop-nav {
       display: none !important; } }
-  @media screen and (max-width: 768px) {
-    footer {
-      padding-top: 20px; } }
   @media screen and (min-width: 320px) and (max-width: 767px) {
     footer {
       text-align: center; } }
@@ -468,7 +496,7 @@ footer {
     footer .social-media a:last-child {
       margin-right: 0; }
     footer .social-media .fab {
-      font-size: 1.4rem; }
+      font-size: 1.3rem; }
     footer .social-media .fa-instagram:hover {
       color: #e3436b; }
     footer .social-media .fa-facebook-square:hover {
