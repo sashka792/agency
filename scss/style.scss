@@ -109,7 +109,7 @@ textarea::placeholder {
 			border-bottom: 2px #fff solid;
 			align-content: center;
 			@media screen and (min-width: 320px) and (max-width: 768px) {
-				border-bottom: 2px transparent solid;
+				border-bottom: 2px #00A8FF solid;
 			}
 		}
 	}
@@ -185,6 +185,7 @@ textarea::placeholder {
 		}
 		.social-media{
 			a {
+				text-decoration: none;
 				margin-left: 20px;
 				@media screen and (max-width: 992px) {
 					margin: 0 10px;	

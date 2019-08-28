@@ -116,7 +116,7 @@ textarea::placeholder {
       align-content: center; }
       @media screen and (min-width: 320px) and (max-width: 768px) {
         .menu-list a:hover {
-          border-bottom: 2px transparent solid; } }
+          border-bottom: 2px #00A8FF solid; } }
 
 .navbar-brand {
   position: relative; }
@@ -169,6 +169,7 @@ textarea::placeholder {
       .navbar .navbar-collapse .menu-list a {
         margin-right: 0; } }
     .navbar .navbar-collapse .social-media a {
+      text-decoration: none;
       margin-left: 20px; }
       @media screen and (max-width: 992px) {
         .navbar .navbar-collapse .social-media a {
