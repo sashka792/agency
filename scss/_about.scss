@@ -1,0 +1,42 @@
+.about{
+    .img-team{
+        width: 255px;
+    }
+    .partners-title{
+		margin-bottom: 40px;
+    }
+    .partners-logo{
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+// Slick partners
+.partners {
+    background-size: cover;
+	padding: 80px 0 70px;
+	.partners-inner {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	.single-partner {
+		text-align: center;
+	}
+	.single-partner img {
+		height: 100px;
+	}
+}
+// Slick slider 
+.slick-dots li {
+    margin: 0;
+}
+.slick-dots li button:before {
+    font-size: 11px;
+    opacity: 1;
+    color: rgba(255, 255, 255, .2);
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #fff;
+}
