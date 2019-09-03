@@ -2,6 +2,9 @@
 	color: #000;
 	img {
 		max-width: 100%;
+		@media screen and (max-width: 425px){
+			width: 70%;
+		}
 	}
 	.wrap-test{
 		background: rgba(146, 201, 229, .2);
@@ -36,13 +39,25 @@
             color: #005073;
           }
       }
-      .testimonials-text{
-        
-      }
+    .testimonials-text{
+		font-family: 'Roboto', sans-serif;
+		font-size: 1rem;
+		font-style: italic;
+	}
+	.testimonials-name{
+		font-family: 'Raleway', sans-serif;
+		font-weight: 700;
+		font-size: 1.125rem;
+		letter-spacing: 0.045em;
+	}
 	.testimonials-text, 
-	.testimonials-name,
-	.testimonials-country
-	{
+	.testimonials-name {
 		margin: 20px 10px 0px 20px;
+	}
+	.testimonials-country {
+		font-family: 'Raleway', sans-serif;
+		font-weight: 300;
+		font-size: 0.9rem;
+		margin: 5px 10px 20px 20px;
 	}
 }

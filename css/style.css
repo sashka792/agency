@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:400,700|Raleway:400,700|Roboto:100,300,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:300,300i,400&display=swap");
 .positions .position {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -92,6 +93,9 @@
 .positions .position:hover .position__overlay {
   opacity: 1; }
 
+.position-image {
+  height: auto; }
+
 .about .img-team {
   width: 255px; }
 
@@ -129,6 +133,9 @@
   color: #000; }
   .testimonials img {
     max-width: 100%; }
+    @media screen and (max-width: 425px) {
+      .testimonials img {
+        width: 70%; } }
   .testimonials .wrap-test {
     background: rgba(146, 201, 229, 0.2);
     border-radius: 20px; }
@@ -157,10 +164,23 @@
     .wrap-testimonials .wrap-quotes .fa-quote-left {
       font-size: 1.3rem;
       color: #005073; }
+  .wrap-testimonials .testimonials-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-style: italic; }
+  .wrap-testimonials .testimonials-name {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.125rem;
+    letter-spacing: 0.045em; }
   .wrap-testimonials .testimonials-text,
-  .wrap-testimonials .testimonials-name,
-  .wrap-testimonials .testimonials-country {
+  .wrap-testimonials .testimonials-name {
     margin: 20px 10px 0px 20px; }
+  .wrap-testimonials .testimonials-country {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+    margin: 5px 10px 20px 20px; }
 
 .wrap-map {
   max-width: 100%;
