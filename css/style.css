@@ -96,24 +96,69 @@
 .position-image {
   height: auto; }
 
+.about .about-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 0.045em; }
+
+.about .about-title--sub {
+  font-size: 1.5rem; }
+
+.about .about-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  margin-top: 20px; }
+
+.about .team-title {
+  margin-bottom: 50px; }
+
 .about .img-team {
   width: 255px; }
 
+.about .team-name {
+  margin: 20px 0 7px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.045em; }
+
+.about .team-about {
+  margin: 0 auto;
+  font-size: 0.9rem;
+  max-width: 200px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+  letter-spacing: 0.025em; }
+
+@media screen and (max-width: 768px) {
+  .about .ali,
+  .about .ruslana {
+    margin-bottom: 40px; } }
+
 .about .partners-title {
-  margin-bottom: 40px; }
+  margin: 60px 0 40px; }
 
 .about .partners-logo {
   height: auto;
   max-width: 100%; }
 
+@media screen and (max-width: 525px) {
+  .about .ket {
+    margin-bottom: 30px; } }
+
 .partners {
   background-size: cover;
-  padding: 80px 0 70px; }
+  padding: 40px 0 70px; }
   .partners .partners-inner {
     max-width: 100%;
     margin: 0 auto; }
   .partners .single-partner {
     text-align: center; }
+    .partners .single-partner .anex-tour {
+      padding-left: 100px; }
   .partners .single-partner img {
     height: 100px; }
 
